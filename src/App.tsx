@@ -5,6 +5,7 @@ const App = () => {
   return (
     <div>
       <Button>test</Button>
+      <div className='font-Neue text-baseColor'>abderrahim </div>
     </div>
   )
 }

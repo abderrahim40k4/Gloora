@@ -9,7 +9,8 @@ export default {
     colors:{
       'baseColor':"#F3A17C",
       'white':"#FFFFFF",
-      'black':"#000000"
+      'black':"#000000",
+      'softGray':'#F8F7F7'
     },
   	extend: {
   		borderRadius: {

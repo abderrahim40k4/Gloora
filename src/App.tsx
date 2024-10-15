@@ -1,11 +1,12 @@
 import React from 'react'
 import { Button } from './components/ui/button'
+import NavBar from './components/NavBar'
 
 const App = () => {
   return (
-    <div>
-      <Button>test</Button>
-      <div className='font-Neue text-baseColor'>abderrahim </div>
+    
+    <div className="container m-auto lg:py-10 p-4">
+      <NavBar/>
     </div>
   )
 }

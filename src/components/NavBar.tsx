@@ -6,7 +6,34 @@ import Heart from '../assets/icons/Heart.svg'
 import { Link } from 'react-router-dom'
 import { Button } from './ui/button'
 
+type listTypes = {
+    id:number,
+    title:string,
+    link:string,
+    active:boolean
+
+}
 const NavBar = () => {
+    const list:listTypes[] =[
+        {
+            id:1,
+            title:"Home",
+            link:"/",
+            active:true
+        },
+        {
+            id:2,
+            title:"Products",
+            link:"/",
+            active:false
+        },
+        {
+            id:3,
+            title:"About us",
+            link:"/",
+            active:false
+        }
+    ]
   return (
     <div className="w-full flex flex-row justify-between items-center"> 
         <div className=''>
@@ -14,9 +41,12 @@ const NavBar = () => {
         </div>
         <div className={`h-full`}>
             <ul className="hidden lg:flex justify-evenly gap-16 bg-softGray px-16 py-5 rounded-full h-full font-Averia font-normal text-lg">
-                <li className='text-baseColor'><Link to={'/'}>Home</Link></li>
-                <li><Link to={'/'}>Product</Link></li>
-                <li><Link to={'/'}>About Us</Link></li>
+                {
+                    list.map((item)=>(
+                        <li key={item.id} className={`${item.active? 'text-baseColor':'text-black'}`}><Link to={item.link}>{item.title}</Link></li>
+
+                    ))
+                }
             </ul>
         </div>
         <div className='  lg:flex justify-evenly gap-6 items-center'>

@@ -5,7 +5,7 @@ import NavBar from './components/NavBar'
 const App = () => {
   return (
     
-    <div className="container m-auto lg:py-10 p-4">
+    <div className="lg:p-10 px-5 py-8 m-auto lg:py-5">
       <NavBar/>
     </div>
   )

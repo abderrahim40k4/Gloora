@@ -48,7 +48,8 @@ const Category = () => {
         },
     ]
     return (
-        <div className="w-full inline-flex flex-row justify-center items-center lg:px-28 px-4 my-6 md:my-12 ">
+        <div className="lg:p-10 px-5 py-8 m-auto lg:py-5 relative">
+        <div className="w-full inline-flex flex-row justify-center items-center lg:px-28 px-4 my-6 md:my-12">
             <Carousel
                 opts={{
                     align: "center",
@@ -62,10 +63,10 @@ const Category = () => {
                         categorys.map((category, key)=>(
                             <CarouselItem className="basis-full w-full" key={category.id}>
                             <div  className=" flex flex-col justify-between gap-6 items-center w-full ">
-                                <div className={`w-[320px] h-[520px] border border-baseColor bg-baseColor/50 rounded-full`}></div>
+                                <div className={`lg:w-[320px] w-full lg:h-[520px] h-auto border border-baseColor bg-baseColor/50 rounded-full`}></div>
                                 <div className="my-6 flex flex-col justify-center items-center gap-4 w-full">
-                                    <p className="font-Neue text-lg text-baseColor ">{category.title}</p>
-                                    <p className="w-full text-center text-2xl font-Averia font-medium text-[#979797] lg:w-1/3 ">{category.desc}</p>
+                                    <p className="font-Neue lg:text-lg text-sm text-baseColor ">{category.title}</p>
+                                    <p className="w-full text-center md:text-2xl text-lg font-Averia font-medium text-[#979797] lg:w-1/3 ">{category.desc}</p>
                                 </div>
                                 
                             <Button size={"lg"} variant={"default"} className="bg-baseColor/40 rounded-full py-7"><span className="text-lg font-Averia font-normal">See product category</span> <img src={Arrow} alt="" /></Button>
@@ -79,6 +80,7 @@ const Category = () => {
                 <CarouselPrevious className="border  border-baseColor md:block hidden" />
                 <CarouselNext className="border border-baseColor md:block hidden" />
             </Carousel>
+        </div>
         </div>
     )
 }

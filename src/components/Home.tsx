@@ -15,6 +15,7 @@ import { Button } from "./ui/button"
 import Product from "./Home/Product"
 import Category from "./Home/Category"
 import Titles from "./Titles"
+import About from "./Home/About"
 
 
 // Import Swiper React components
@@ -24,7 +25,7 @@ const Home = () => {
 
 
     return (
-        <div className="lg:px-10 px-5  m-auto mt-5">
+        <div className="mt-5">
             <div className="w-full relative h-screen ">
                 <div className="w-full md:h-full  overflow-hidden md:rounded-lg  rounded-none absolute z-10">
                     <img src={Hero} alt="" className='w-full h-screen' />
@@ -35,13 +36,14 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className=" w-full px-5 lg:px-10 my-10">
+            <div className=" w-full inline-flex justify-center items-center flex-col">
                 <Titles content={"Gloora Product."} text={false}/>
 
                 {/* prodct sectin */}
                 <Product />
                 <Titles content={"Product Categories."} text={true} desc="Transform Your Skin Elegantly with Our Luxurious and Effective Skincare"/>
                 <Category />
+                <About/>
             </div>
         </div>
     )

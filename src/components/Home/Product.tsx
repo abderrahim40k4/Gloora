@@ -95,7 +95,7 @@ const Product = () => {
         }}
         className="p-2"
     >
-        <CarouselContent className="flex gap-8 p-6 md:justify-evenly w-full">
+        <CarouselContent className="flex gap-8 p-6 md:justify-evenly w-full mb-6">
             {
                 prodacts.map((product, key) =>(
                     <CarouselItem className="lg:basis-1/4 basis-full lg:w-72 w-1/4 relative  h-[26.4rem] rounded-3xl bg-baseColo flex flex-col justify-between items-start p-0 shadow-lg " key={product.id}  onClick={()=>handleHover(product.selected)}>

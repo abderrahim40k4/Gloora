@@ -36,12 +36,12 @@ const Home = () => {
             </div>
 
             <div className=" w-full px-5 lg:px-10 my-10">
-                <Titles content={"Gloora Product."}/>
+                <Titles content={"Gloora Product."} text={false}/>
 
                 {/* prodct sectin */}
-               <Product />
-               <Titles content={"Product Categories."}/>
-               <Category/>
+                <Product />
+                <Titles content={"Product Categories."} text={true} desc="Transform Your Skin Elegantly with Our Luxurious and Effective Skincare"/>
+                <Category />
             </div>
         </div>
     )

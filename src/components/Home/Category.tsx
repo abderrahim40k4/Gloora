@@ -48,7 +48,7 @@ const Category = () => {
         },
     ]
     return (
-        <div className="lg:p-10 px-5 py-8 m-auto lg:py-5 relative">
+        <div className="lg:p-10 px-5 py-8 m-auto lg:py-5">
         <div className="w-full inline-flex flex-row justify-center items-center lg:px-28 px-4 my-6 md:my-12">
             <Carousel
                 opts={{

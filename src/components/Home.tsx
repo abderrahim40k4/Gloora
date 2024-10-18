@@ -26,7 +26,7 @@ const Home = () => {
 
     return (
         <div className="mt-5">
-            <div className="w-full relative h-screen ">
+            <div className="w-full h-screen ">
                 <div className="w-full md:h-full  overflow-hidden md:rounded-lg  rounded-none absolute z-10">
                     <img src={Hero} alt="" className='w-full h-screen' />
                 </div>
@@ -36,7 +36,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className=" w-full inline-flex justify-center items-center flex-col">
+            <div className=" w-full inline-flex justify-center items-center flex-col ">
                 <Titles content={"Gloora Product."} text={false}/>
 
                 {/* prodct sectin */}

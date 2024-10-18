@@ -13,6 +13,8 @@ import {
 import { Badge } from "./ui/badge"
 import { Button } from "./ui/button"
 import Product from "./Home/Product"
+import Category from "./Home/Category"
+import Titles from "./Titles"
 
 
 // Import Swiper React components
@@ -34,14 +36,12 @@ const Home = () => {
             </div>
 
             <div className=" w-full px-5 lg:px-10 my-10">
-                <div className="w-full text-center inline-flex justify-center h-10 my-4 ">
-                    <h1 className="font-Neue text-2xl text-baseColor">
-                        Gloora Product.
-                    </h1>
-                </div>
+                <Titles content={"Gloora Product."}/>
 
                 {/* prodct sectin */}
                <Product />
+               <Titles content={"Product Categories."}/>
+               <Category/>
             </div>
         </div>
     )

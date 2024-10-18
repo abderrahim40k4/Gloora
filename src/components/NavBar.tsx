@@ -55,7 +55,7 @@ const NavBar = () => {
             
             <Button variant={"ghost"} size={"icon"} className="lg:block hidden "><img src={Sack} alt="" /></Button>
             <Button variant={"ghost"} size={"icon"} className="lg:block hidden"><img src={Heart} alt="" /></Button>
-            <Button variant={"outline"} className="font-normal lg:text-lg text-base lg:px-10 lg:py-6 px-5 py-3" >Contact</Button>
+            <Button variant={"outline"} className="font-normal lg:text-lg text-base lg:px-10 lg:py-6 px-5 py-3 rounded-full" >Contact</Button>
         </div>
     </div>
     </div>

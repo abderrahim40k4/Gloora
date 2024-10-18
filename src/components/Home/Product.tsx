@@ -125,8 +125,8 @@ const Product = () => {
                 <p className="text-sm font-Averia font-normal text-baseColor uppercase">{product.category}</p>
                 <p className="text-lg font-Neue font-medium">{product.title}</p>
                 <div className="w-full inline-flex gap-4 items-center">
-                    <span className="font-Neue text-lg text-black">{product.prix}$</span>
-                    <span  className="font-Neue text-xc text-black/50 font-light">{product.discount*product.prix/100}$</span>
+                    <span className="font-Neue text-lg text-black">{product.prix - product.discount*product.prix/100}$</span>
+                    <span  className="font-Neue text-xc text-black/50 font-light">{product.prix}$</span>
                 </div>
             </div>
             </CarouselItem>

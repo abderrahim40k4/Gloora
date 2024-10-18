@@ -1,4 +1,8 @@
+
 import Hero from "../assets/images/imageHero.png"
+import Sack from "../assets/icons/sackShop.svg"
+import Heart from "../assets/icons/heartShop.svg"
+import Eye from "../assets/icons/eyeShop.svg"
 import {
     Carousel,
     CarouselContent,
@@ -6,12 +10,16 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
+import { Badge } from "./ui/badge"
+import { Button } from "./ui/button"
+import Product from "./Home/Product"
 
 
 // Import Swiper React components
 
 
 const Home = () => {
+
 
     return (
         <div className="lg:px-10 px-5  m-auto mt-5">
@@ -31,25 +39,9 @@ const Home = () => {
                         Gloora Product.
                     </h1>
                 </div>
-                <div className="">
-                    <Carousel
-                        opts={{
-                            align: "start",
-                            loop: true,
-                        }}
-                    >
-                        <CarouselContent>
-                            <CarouselItem className="lg:basis-1/4 basis-full">...</CarouselItem>
-                            <CarouselItem className="lg:basis-1/4 basis-full">...</CarouselItem>
-                            <CarouselItem className="lg:basis-1/4 basis-full">...</CarouselItem>
-                            <CarouselItem className="lg:basis-1/4 basis-full">...</CarouselItem>
-                            <CarouselItem className="lg:basis-1/4 basis-full">...</CarouselItem>
-                            <CarouselItem className="lg:basis-1/4 basis-full">...</CarouselItem>
-                        </CarouselContent>
-                        <CarouselPrevious className="border-none md:block hidden" />
-                        <CarouselNext className="border-none md:block hidden" />
-                    </Carousel>
-                </div>
+
+                {/* prodct sectin */}
+               <Product />
             </div>
         </div>
     )

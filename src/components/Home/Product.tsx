@@ -87,7 +87,7 @@ const Product = () => {
         return item
     }
   return (
-    <div  className="lg:px-10 px-5 py-8 m-auto lg:py-5 relative">
+    <div  className="lg:px-10 px-5 py-8 m-auto lg:py-5">
     <div className="w-full container flex items-center justify-center">
     <Carousel
         opts={{
@@ -96,7 +96,7 @@ const Product = () => {
         }}
         className="w-full inline-flex justify-center items-center"
     >
-        <CarouselContent className="flex gap-8 md:justify-center items-center w-full mb-6">
+        <CarouselContent className="flex gap-8 justify-center items-center w-3/4 relative mb-6 ">
             {
                 prodacts.map((product, key) =>(
                     <CarouselItem className="lg:basis-1/4  basis-3/4 lg:w-72 w-1/4 relative  h-[26.4rem] rounded-3xl bg-baseColo flex flex-col justify-between items-start p-0 shadow-lg " key={product.id}  onClick={()=>handleHover(product.selected)}>
@@ -137,8 +137,11 @@ const Product = () => {
             
            
         </CarouselContent>
-        <CarouselPrevious className="border-none md:block hidden" />
+        <div className="w-full absolute flex justify-between items-center h-full">
+
+        <CarouselPrevious className="border-none md:block hidden " />
         <CarouselNext className="border-none md:block hidden" />
+        </div>
     </Carousel>
 </div>
 </div>

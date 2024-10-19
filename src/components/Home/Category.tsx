@@ -49,19 +49,19 @@ const Category = () => {
     ]
     return (
         <div className="lg:p-10 px-5 py-8 m-auto lg:py-5">
-        <div className="w-full inline-flex flex-row justify-center items-center lg:px-28 px-4 my-6 md:my-12">
+        <div className="w-full inline-flex flex-row justify-center items-center lg:px-28 px-4 my-6 md:my-12 relative container">
             <Carousel
                 opts={{
                     align: "center",
                     loop: false,
                 }}
-                className="w-full"
+                className="w-full inline-flex justify-between items-center relative"
             >
-                <CarouselContent className="w-full inline-flex justify-evenly items-center" >
+                <CarouselContent className="w-full inline-flex justify-evenly items-center relative" >
 
                     {
                         categorys.map((category, key)=>(
-                            <CarouselItem className="basis-full w-full" key={category.id}>
+                            <CarouselItem className="basis-full w-full flex  justify-center items-center" key={category.id}>
                             <div  className=" flex flex-col justify-between gap-6 items-center w-full ">
                                 <div className={`lg:w-[320px] w-full lg:h-[520px] h-auto border border-baseColor bg-baseColor/50 rounded-full`}></div>
                                 <div className="my-6 flex flex-col justify-center items-center gap-4 w-full">
@@ -72,13 +72,16 @@ const Category = () => {
                             <Button size={"lg"} variant={"default"} className="bg-baseColor/40 rounded-full py-7"><span className="text-lg font-Averia font-normal">See product category</span> <img src={Arrow} alt="" /></Button>
                             </div>
                         </CarouselItem>
+                    
                         ))
                     }
 
 
                 </CarouselContent>
+                <div className="w-full absolute flex justify-between items-center h-full">
                 <CarouselPrevious className="border  border-baseColor md:block hidden" />
                 <CarouselNext className="border border-baseColor md:block hidden" />
+                </div>
             </Carousel>
         </div>
         </div>

@@ -4,7 +4,7 @@ import Background from "../../assets/images/aboutUsbg.png"
 const About = () => {
   return (
     
-    <div className="w-full inline-flex justify-center items-center static">
+    <div className="w-full inline-flex justify-center items-center ">
         <img src={Background} alt="" className='w-full object-fill static md:h-auto h-[900px]' />
         <div className='z-50 absolute md:w-2/4 w-4/5 h-[37rem] bg-baseColor/75 rounded-3xl p-6 flex flex-col gap-8'>
             <div className="w-full bg-opacity-10 bg-white h-64 rounded-xl"></div>

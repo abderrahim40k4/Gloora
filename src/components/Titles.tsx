@@ -6,7 +6,7 @@ interface titleProps {
 
 const Titles = ({ content, text, desc }: titleProps) => {
     return (
-        <div className="w-full text-center inline-flex flex-col justify-center h-10 md:my-12 my-6 ">
+        <div className="w-full text-center inline-flex flex-col justify-center h-10 md:my-8 my-6 ">
             <h1 className="font-Neue text-2xl text-baseColor">
                 {content}
             </h1>

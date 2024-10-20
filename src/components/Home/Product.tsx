@@ -96,10 +96,10 @@ const Product = () => {
         }}
         className="w-full inline-flex justify-center items-center"
     >
-        <CarouselContent className="flex gap-8 justify-center items-center w-3/4 relative mb-6 ">
+        <CarouselContent className="flex gap-8 justify-center items-center relative  mb-6 ">
             {
                 prodacts.map((product, key) =>(
-                    <CarouselItem className="lg:basis-1/4  basis-3/4 lg:w-72 w-1/4 relative  h-[26.4rem] rounded-3xl bg-baseColo flex flex-col justify-between items-start p-0 shadow-lg " key={product.id}  onClick={()=>handleHover(product.selected)}>
+                    <CarouselItem className="lg:basis-1/4  lg:w-72   h-[26.4rem] rounded-3xl bg-baseColo flex flex-col justify-between items-start p-0 shadow-lg relative" key={product.id}  onClick={()=>handleHover(product.selected)}>
             <div className="w-full h-80 bg-[#F7F7F7] rounded-3xl p-4 flex justify-between items-start flex-col">
                 <div className="w-full">
                     <Badge variant={"default"} className="px-4 py-2 rounded-full bg-black text-white font-Neue text-sm font-light">-{product.discount}%</Badge>

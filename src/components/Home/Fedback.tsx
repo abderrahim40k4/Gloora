@@ -42,11 +42,11 @@ export default function Feedback() {
     ]
 
     return (
-        <div className="w-full px-4 py-3  mb-12">
-            <Carousel className="mx-auto my-4 relative inline-flex flex-col justify-center items-center">
+        <div className="w-full px-4 py-3  mb-12 relative">
+            <Carousel className="mx-auto my-4  inline-flex flex-col justify-center items-center">
                 <CarouselContent className="inline-flex items-center justify-center" >
                     {items.map((item, index) => (
-                        <CarouselItem key={index} className="relative md:pt-5 lg:pt-6 flex flex-col justify-between items-center border-none">
+                        <CarouselItem key={index} className=" md:pt-5 lg:pt-6 flex flex-col justify-between items-center border-none">
                             <Card className="h-full border-none shadow-none w-2/3">
                                 <CardContent className="flex flex-col md:flex-row items-center justify-center gap-10 p-6 h-full w-full">
                                     <div className=" mb-4 md:mb-0 bg-softGray md:h-64 h-[160px] md:w-32 w-[120px] lg:mx-8 rounded-full">

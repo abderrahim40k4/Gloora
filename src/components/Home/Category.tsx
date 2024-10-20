@@ -48,7 +48,7 @@ const Category = () => {
         },
     ]
     return (
-        <div className="lg:p-10 px-5 py-8 m-auto lg:py-5">
+        <div className="lg:p-10 px-5 py-8 m-auto lg:py-5 relative w-full">
         <div className="w-full inline-flex flex-row justify-center items-center lg:px-28 px-4 my-6 md:my-12 relative container">
             <Carousel
                 opts={{
@@ -60,8 +60,8 @@ const Category = () => {
                 <CarouselContent className="w-full inline-flex justify-evenly items-center relative" >
 
                     {
-                        categorys.map((category, key)=>(
-                            <CarouselItem className="basis-full w-full flex  justify-center items-center" key={category.id}>
+                        categorys.map((category, index)=>(
+                            <CarouselItem className="basis-full w-full flex  justify-center items-center relative" key={index}>
                             <div  className=" flex flex-col justify-between gap-6 items-center w-full ">
                                 <div className={`lg:w-[320px] w-full lg:h-[520px] h-auto border border-baseColor bg-baseColor/50 rounded-full`}></div>
                                 <div className="my-6 flex flex-col justify-center items-center gap-4 w-full">

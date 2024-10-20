@@ -13,6 +13,10 @@ export default {
       'softGray':'#F8F7F7'
     },
   	extend: {
+      backgroundImage: {
+        'hero-pattern': "url('src/assets/images/bg-big.png')",
+        'footer-texture': "url('src/assets/images/bg-small.png')",
+      },
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',

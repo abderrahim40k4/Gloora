@@ -16,6 +16,7 @@ export default {
       backgroundImage: {
         'hero-pattern': "url('src/assets/images/bg-big.png')",
         'footer-texture': "url('src/assets/images/bg-small.png')",
+        'footer-bg': "url('src/assets/images/footer-bg.png')",
       },
   		borderRadius: {
   			lg: 'var(--radius)',

@@ -42,7 +42,7 @@ export default function Feedback() {
     ]
 
     return (
-        <div className="w-full px-4 py-3 bg-background">
+        <div className="w-full px-4 py-3  mb-12">
             <Carousel className="mx-auto my-4 relative inline-flex flex-col justify-center items-center">
                 <CarouselContent className="inline-flex items-center justify-center" >
                     {items.map((item, index) => (
@@ -52,7 +52,7 @@ export default function Feedback() {
                                     <div className=" mb-4 md:mb-0 bg-softGray md:h-64 h-[160px] md:w-32 w-[120px] lg:mx-8 rounded-full">
                                         <img src={item.image} alt="" />
                                     </div>
-                                    <div className="w-full md:w-2/3 text-center md:text-left flex flex-col items-start">
+                                    <div className="w-full md:w-2/3 text-center md:text-left flex flex-col md:items-start items-center">
                                         <h3 className="text-3xl font-medium font-Neue ">{item.name}</h3>
                                         <p className="text-sm text-[#979797] font-Neue font-normal mb-2">{item.role}</p>
                                         <p className="text-base font-Neue font-medium ">{item.content}</p>

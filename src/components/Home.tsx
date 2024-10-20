@@ -17,6 +17,7 @@ import Category from "./Home/Category"
 import Titles from "./Titles"
 import About from "./Home/About"
 import Fedback from "./Home/Fedback"
+import Offers from "./Home/Offers"
 
 
 // Import Swiper React components
@@ -47,6 +48,8 @@ const Home = () => {
                 <About/>
                 <Titles content={"Customer Feedback."} text={false} />
                 <Fedback/>
+                <Titles content={"Gloora Offers.."} text={true} desc="Transform Your Skin Elegantly with Our Luxurious and Effective Skincare"/>
+                <Offers/>
             </div>
         </div>
     )

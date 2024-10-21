@@ -9,6 +9,7 @@ import './index.css'
 import NotFoundPage from './components/NotFoundPage.tsx';
 import Products from './pages/Products.tsx';
 import About from './pages/About.tsx';
+import ProductDetails from './pages/ProductDetails.tsx';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,11 @@ const router = createBrowserRouter([
   {
     path: "/products",
     element: <Products/>,
+    errorElement:<NotFoundPage/>
+  },
+  {
+    path: "/products/:id", // Dynamic route for product detail
+    element: <ProductDetails/>, // Add ProductDetail component
     errorElement:<NotFoundPage/>
   },
   {

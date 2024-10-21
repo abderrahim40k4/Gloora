@@ -78,10 +78,10 @@ const links: LinkGroup[] = [
                 <div className=' w-full inline-flex justify-center items-center '>
                         <div className="relative md:w-1/3 w-full py-6 rounded-full " dir='rtl'>
                            <div className='' dir='ltr'>
-                           <input type="text" id="email-address-icon" className=" bg-white text-black/20 text-start inset-y-0 -start-0 rounded-full py-5 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="your email@example.com" />
+                           <input type="text" id="email-address-icon" className=" bg-white text-black/20 text-start inset-y-0 -start-0 rounded-full py-6 md:text-sm text-xs focus:ring-blue-500 focus:border-blue-500 block w-full lg:ps-5 ps-4 md:ps-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="your email@example.com" />
                            </div>
                             <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none py-4">
-                                <Button className='bg-baseColor rounded-full pl-12 '><img src={Arrow} alt="" /></Button>
+                                <Button className='bg-baseColor rounded-full md:pl-12 pl-6 '><img src={Arrow} alt="" /></Button>
                             </div>
                         </div>
                 </div>

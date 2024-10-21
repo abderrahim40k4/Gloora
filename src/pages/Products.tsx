@@ -19,11 +19,11 @@ const Products = () => {
         </div>
         <div className="w-full mt-6">
           <div className="w-full inline-flex justify-between items-center container md:px-12 px-3">
-            <div className='font-Neue font-medium text-lg md:text-xl text-baseColor'>All Gloora Products.</div>
+            <div className='font-Neue font-medium text-sm md:text-xl text-baseColor'>All Gloora Products.</div>
             <div>
               <DropdownMenu>
                 <DropdownMenuTrigger>
-                  <Button className='border-2 hover:border-baseColor border-softGray px-6 py-4 text-sm rounded-full font-Neue ' >Sort by Latest <ChevronDown className='text-baseColor text-lg' size={32}/></Button>
+                  <Button className='border-2 hover:border-baseColor border-softGray md:px-6 md:py-4 mx-3  text-sm rounded-full font-Neue ' >Sort by Latest <ChevronDown className='text-baseColor text-lg' size={32}/></Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
                       <DropdownMenuItem>option</DropdownMenuItem>
@@ -33,7 +33,7 @@ const Products = () => {
           </div>
         </div>
 
-        <div>
+        <div className='w-full inline-flex justify-center items-center'>
             <ProdactsList/>
         </div>
 

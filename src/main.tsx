@@ -7,11 +7,23 @@ import {
 import App from './App.tsx'
 import './index.css'
 import NotFoundPage from './components/NotFoundPage.tsx';
+import Products from './pages/Products.tsx';
+import About from './pages/About.tsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+    errorElement:<NotFoundPage/>
+  },
+  {
+    path: "/products",
+    element: <Products/>,
+    errorElement:<NotFoundPage/>
+  },
+  {
+    path: "/about",
+    element: <About/>,
     errorElement:<NotFoundPage/>
   },
 ]);

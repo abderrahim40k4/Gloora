@@ -1,23 +1,12 @@
 
 import Hero from "../assets/images/imageHero.png"
-import Sack from "../assets/icons/sackShop.svg"
-import Heart from "../assets/icons/heartShop.svg"
-import Eye from "../assets/icons/eyeShop.svg"
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from "@/components/ui/carousel"
-import { Badge } from "./ui/badge"
-import { Button } from "./ui/button"
-import Product from "./Home/Product"
-import Category from "./Home/Category"
-import Titles from "./Titles"
-import About from "./Home/About"
-import Fedback from "./Home/Fedback"
-import Offers from "./Home/Offers"
+
+import Product from "../components/Home/Product"
+import Category from "../components/Home/Category"
+import Titles from "../components/Titles"
+import About from "../components/Home/About"
+import Fedback from "../components/Home/Fedback"
+import Offers from "../components/Home/Offers"
 
 
 // Import Swiper React components

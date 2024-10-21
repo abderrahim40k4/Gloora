@@ -13,6 +13,7 @@ import { Button } from ".././ui/button"
 
 import ProdctIm from "../../assets/images/prodact.png"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 
 type productsType = {
@@ -124,7 +125,7 @@ const Product = () => {
             </div>
             <div className="w-full inline-flex items-start justify-evenly flex-col p-4">
                 <p className="text-sm font-Averia font-normal text-baseColor uppercase">{product.category}</p>
-                <p className="text-lg font-Neue font-medium">{product.title}</p>
+                <Link to={"/products"}><p className="text-lg font-Neue font-medium">{product.title}</p></Link>
                 <div className="w-full inline-flex gap-4 items-center">
                     <span className="font-Neue text-lg text-black">{product.prix - product.discount*product.prix/100}$</span>
                     <span  className="font-Neue text-xc text-black/50 font-light">{product.prix}$</span>

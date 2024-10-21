@@ -6,8 +6,6 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { ChevronDown } from 'lucide-react'
@@ -28,10 +26,7 @@ const Products = () => {
                   <Button className='border-2 hover:border-baseColor border-softGray px-6 py-4 text-sm rounded-full font-Neue ' >Sort by Latest <ChevronDown className='text-baseColor text-lg' size={32}/></Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
-                  <DropdownMenuItem>Profile</DropdownMenuItem>
-                  <DropdownMenuItem>Billing</DropdownMenuItem>
-                  <DropdownMenuItem>Team</DropdownMenuItem>
-                  <DropdownMenuItem>Subscription</DropdownMenuItem>
+                      <DropdownMenuItem>option</DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
             </div>

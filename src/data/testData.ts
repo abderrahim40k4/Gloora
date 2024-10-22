@@ -23,6 +23,13 @@ interface Product {
     date: string;
   }
 
+  interface ContactInfo {
+    city: string;
+    feedback: string;
+    phoneNumbers: string[];
+    email: string;
+}
+
   // testData.ts
 
 // Sample product data
@@ -141,4 +148,20 @@ export const products: Product[] = [
       date: "2023-09-18",
     },
   ];
+
+
+  export const glooraContact: ContactInfo[] = [
+    {
+        city: "New York",
+        feedback: "I've been using Gloora skincare products for the past six months, and the transformation in my skin has been incredible!",
+        phoneNumbers: ["+3566789-789", "+4564767-667"],
+        email: "support@gloora.com"
+    },
+    {
+        city: "Morocco",
+        feedback: "I've been using Gloora skincare products for the past six months, and the transformation in my skin has been incredible!",
+        phoneNumbers: ["+21256768-889", "+21288765-099"],
+        email: "support@gloora.com"
+    }
+]
   

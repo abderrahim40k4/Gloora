@@ -70,18 +70,18 @@ const links: LinkGroup[] = [
 ]
 
     return (
-        <div className="w-full bg-footer-bg bg-center bg-cover lg:h-[982px] py-12 mt-10 inline-flex justify-center items-center">
+        <div className="w-full bg-footer-bg lg:bg-center bg-cover lg:h-[982px]  py-12 mt-10 inline-flex justify-center items-center">
             <div className='w-5/6 h-4/6 rounded-3xl  bg-baseColor bg-clip-padding backdrop-filter backdrop-blur-[10px] bg-opacity-50 lg:px-12 px-6'>
                 <div className='w-full py-12 mx-auto'>
                     <p className='w-full text-center text-white font-Neue font-medium text-3xl'>Get offers and news</p>
                 </div>
                 <div className=' w-full inline-flex justify-center items-center '>
-                        <div className="relative md:w-1/3 w-full py-6 rounded-full " dir='rtl'>
+                        <div className="relative md:w-1/3 w-full md:py-6 py-3 rounded-full " dir='rtl'>
                            <div className='' dir='ltr'>
-                           <input type="text" id="email-address-icon" className=" bg-white text-black/20 text-start inset-y-0 -start-0 rounded-full py-4 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 lg:p-5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="your email@example.com" />
+                           <input type="text" id="email-address-icon" className=" bg-white text-black/20 text-start inset-y-0 -start-0 rounded-full lg:py-4 py-2 md:text-sm text-xs focus:ring-blue-500 focus:border-blue-500 block w-full ps-5 lg:p-5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="your email@example.com" />
                            </div>
-                            <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none py-4">
-                                <Button className='bg-baseColor rounded-full md:pl-12 pl-6 '><img src={Arrow} alt="" /></Button>
+                            <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none lg:py-4 py-2">
+                                <Button className='bg-baseColor rounded-full md:pl-12 pl-0 w-10 h-5 inline-flex justify-center items-center '><img src={Arrow} alt=""className='h-5 ml-3' /></Button>
                             </div>
                         </div>
                 </div>

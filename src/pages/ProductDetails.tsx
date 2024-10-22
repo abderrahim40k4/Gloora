@@ -8,11 +8,14 @@ import Footer from '@/components/Footer';
 import Sack from "../assets/icons/sackShop.svg"
 import Sackwhite from "../assets/icons/sackWhite.svg"
 import Heart from "../assets/icons/heartShop.svg"
-import Product from "../assets/images/product.png"
+import Productim from "../assets/images/product.png"
 import smalImage from "../assets/images/productImage.png"
 
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import Products from './Products';
+import Product from '@/components/Home/Product';
+import Titles from '@/components/Titles';
 
 const ProductDetails = () => {
     const { id } = useParams<{ id: string }>(); // Extract the product ID from the URL
@@ -22,7 +25,7 @@ const ProductDetails = () => {
         return <p>Product not found!</p>;
     }
     return (
-        <div>
+        <div className='w-full mx-auto'>
             <NavBar />
             <div className='lg:p-10 px-5 py-4 m-auto lg:py-5 mt-12 container'>
                 <div className="w-full flex md:flex-row flex-col justify-start md:gap-24 gap-12 items-center">
@@ -40,19 +43,19 @@ const ProductDetails = () => {
                                 <Badge variant={"default"} className="px-4 py-2 rounded-full bg-black text-white font-Neue text-sm font-light">-19%</Badge>
                             </div>
                             <div>
-                                <img src={Product} alt="" className='md:my-12 my-4 w-full' />
+                                <img src={Productim} alt="" className='md:my-12 my-4 w-full' />
                             </div>
                         </div>
                         <div className='w-full flex flex-row justify-start items-center gap-4 mt-6'>
-                                <div className='w-auto p-2 border-b-4 border-baseColor rounded-full bg-softGray'>
+                            <div className='w-auto p-2 border-b-4 border-baseColor rounded-full bg-softGray'>
                                 <img src={smalImage} alt="" />
-                                </div>
-                                <div className='w-auto p-2 border-b-4 border-baseColor rounded-full bg-softGray'>
+                            </div>
+                            <div className='w-auto p-2 border-b-4 border-baseColor rounded-full bg-softGray'>
                                 <img src={smalImage} alt="" />
-                                </div>
-                                <div className='w-auto p-2 border-b-4 border-baseColor rounded-full bg-softGray'>
+                            </div>
+                            <div className='w-auto p-2 border-b-4 border-baseColor rounded-full bg-softGray'>
                                 <img src={smalImage} alt="" />
-                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className='w-3/4 md:w-1/4 gap-4 flex items-start flex-col justify-evenly py-12'>
@@ -92,26 +95,34 @@ const ProductDetails = () => {
                     </div>
                 </div>
 
-                    <div className='w-full flex md:flex-row justify-between items-center md:gap-12 gap-6 my-12'>
-                        <div className='md:w-1/2 w-full rounded-[60px] bg-softGray md:p-8 p-6 mb-8'>
-                            <div className='w-fuu l flex flex-row justify-start items-center gap-4 mb-8'>
-                                <Button className='font-Neue bg-black text-white rounded-full uppercase text-sm font-normal'>DESCRIPTION</Button>
-                                <Button className='font-Neue bg-[#E7E7E7] text-white rounded-full uppercase text-sm font-normal'>ADDITIONAL INFOS</Button>
-                            </div>
-                            <p className='text-black font-Neue font-medium text-lg'>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores omnis eius voluptates quaerat laborum fuga porro itaque suscipit tempore consequatur atque, nihil veniam ex ratione impedit. Unde ratione a minus?
-                            </p>
+                <div className='w-full flex md:flex-row flex-col justify-between items-center md:gap-12 gap-6 my-12'>
+                    <div className='md:w-1/2 w-full rounded-[60px] bg-softGray md:p-8 p-6 mb-8'>
+                        <div className='w-fuu l flex flex-row justify-start items-center gap-4 mb-8'>
+                            <Button className='font-Neue bg-black text-white rounded-full uppercase text-sm font-normal'>DESCRIPTION</Button>
+                            <Button className='font-Neue bg-[#E7E7E7] text-white rounded-full uppercase text-sm font-normal'>ADDITIONAL INFOS</Button>
                         </div>
-                        <div className='md:w-1/2 w-full rounded-[60px] bg-softGray md:p-8 p-6 mb-8'>
-                            <div className='w-fuu l flex flex-row justify-end items-center gap-4 mb-8'>
-                                <Button className='font-Neue bg-black text-white rounded-full uppercase text-sm font-normal'>DESCRIPTION</Button>
-                                <Button className='font-Neue bg-[#E7E7E7] text-white rounded-full uppercase text-sm font-normal'>ADDITIONAL INFOS</Button>
-                            </div>
-                            <p className='text-black font-Neue font-medium text-lg'>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores omnis eius voluptates quaerat laborum fuga porro itaque suscipit tempore consequatur atque, nihil veniam ex ratione impedit. Unde ratione a minus?
-                            </p>
-                        </div>
+                        <p className='text-black font-Neue font-medium text-lg'>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores omnis eius voluptates quaerat laborum fuga porro itaque suscipit tempore consequatur atque, nihil veniam ex ratione impedit. Unde ratione a minus?
+                        </p>
                     </div>
+                    <div className='md:w-1/2 w-full rounded-[60px] bg-softGray md:p-8 p-6 mb-8'>
+                        <div className='w-full flex flex-row justify-between items-center mb-4'>
+                            <Button className='font-Neue bg-black text-white rounded-full uppercase text-sm font-normal'>REVIEWS</Button>
+                            <div className='flex flex-row justify-end items-center gap-4'>
+                                <Button className='font-Neue bg-black text-white rounded-full uppercase text-sm font-normal'>DESCRIPTION</Button>
+                                <Button className='font-Neue bg-[#E7E7E7] text-white rounded-full uppercase text-sm font-normal'>ADDITIONAL INFOS</Button>
+                            </div>
+                        </div>
+                        <p className='text-black font-Neue font-medium text-lg'>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores omnis eius voluptates quaerat laborum fuga porro itaque suscipit tempore consequatur atque, nihil veniam ex ratione impedit. Unde ratione a minus?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div className="container flex justify-center items-center w-full">
+
+            <Titles content={"Related Products"} text={false}/>
+            <Product/>
             </div>
 
             <Footer />

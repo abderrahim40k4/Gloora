@@ -14,7 +14,7 @@ return (
     <div className='mx-auto'>
         <NavBar />
         <div className='w-full my-8 inline-flex justify-center items-center '>
-            <div className='w-1/3 my-8'>
+            <div className='md:w-1/3 w-full my-8'>
                 <Titles content='Contact Us' text={true} desc='Transform Your Skin Elegantly with Our Luxurious and Effective Skincare' />
             </div>
 
@@ -48,7 +48,7 @@ return (
 
 
                 </div>
-                <Button size={"default"} className='rounded-full bg-baseColor my-4 w-1/4 py-2 text-white font-Neue font-medium text-lg'>Send Message</Button>
+                <Button size={"default"} className='rounded-full bg-baseColor my-4 w-1/4 py-2 text-white font-Neue font-medium md:text-lg text-xs w-60'>Send Message</Button>
             </div>
             <div className='md:w-1/2 w-full p-8'>
                 <div className='w-full border-2 border-softGray p-8 rounded-3xl'>

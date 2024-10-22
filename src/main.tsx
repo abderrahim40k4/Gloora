@@ -10,6 +10,7 @@ import NotFoundPage from './components/NotFoundPage.tsx';
 import Products from './pages/Products.tsx';
 import About from './pages/About.tsx';
 import ProductDetails from './pages/ProductDetails.tsx';
+import Chekout from './pages/Chekout.tsx';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,11 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About/>,
+    errorElement:<NotFoundPage/>
+  },
+  {
+    path: "/chekout",
+    element: <Chekout/>,
     errorElement:<NotFoundPage/>
   },
 ]);

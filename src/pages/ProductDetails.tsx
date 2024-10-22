@@ -9,6 +9,7 @@ import Sack from "../assets/icons/sackShop.svg"
 import Sackwhite from "../assets/icons/sackWhite.svg"
 import Heart from "../assets/icons/heartShop.svg"
 import Product from "../assets/images/product.png"
+import smalImage from "../assets/images/productImage.png"
 
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -23,22 +24,35 @@ const ProductDetails = () => {
     return (
         <div>
             <NavBar />
-            <div className='lg:p-10 px-5 py-8 m-auto lg:py-5 mt-12 container'>
-                <div className="w-full flex md:flex-row flex-col justify-start gap-24 items-center">
-                    <div className="w-full md:w-auto p-8 bg-softGray rounded-[67px]">
-                        <div className='w-full inline-flex justify-between items-center'>
-                            <div className='inline-flex justify-center items-center gap-1'>
-                                <Button variant={"outline"} className="w-11 h-11 rounded-full border border-baseColor bg-white  p-0">
-                                    <img src={Heart} alt="" />
-                                </Button>
-                                <Button variant={"outline"} className="w-11 h-11 rounded-full border border-baseColor bg-white  p-0">
-                                    <img src={Sack} alt="" />
-                                </Button>
+            <div className='lg:p-10 px-5 py-4 m-auto lg:py-5 mt-12 container'>
+                <div className="w-full flex md:flex-row flex-col justify-start md:gap-24 gap-12 items-center">
+                    <div className=''>
+                        <div className="w-full md:w-auto p-8 bg-softGray rounded-[67px]">
+                            <div className='w-full inline-flex justify-between items-center'>
+                                <div className='inline-flex justify-center items-center gap-1'>
+                                    <Button variant={"outline"} className="w-11 h-11 rounded-full border border-baseColor bg-white  p-0">
+                                        <img src={Heart} alt="" />
+                                    </Button>
+                                    <Button variant={"outline"} className="w-11 h-11 rounded-full border border-baseColor bg-white  p-0">
+                                        <img src={Sack} alt="" />
+                                    </Button>
+                                </div>
+                                <Badge variant={"default"} className="px-4 py-2 rounded-full bg-black text-white font-Neue text-sm font-light">-19%</Badge>
                             </div>
-                            <Badge variant={"default"} className="px-4 py-2 rounded-full bg-black text-white font-Neue text-sm font-light">-19%</Badge>
+                            <div>
+                                <img src={Product} alt="" className='md:my-12 my-4 w-full' />
+                            </div>
                         </div>
-                        <div>
-                            <img src={Product} alt="" className='md:my-12 my-4 w-full' />
+                        <div className='w-full flex flex-row justify-start items-center gap-4 mt-6'>
+                                <div className='w-auto p-2 border-b-4 border-baseColor rounded-full bg-softGray'>
+                                <img src={smalImage} alt="" />
+                                </div>
+                                <div className='w-auto p-2 border-b-4 border-baseColor rounded-full bg-softGray'>
+                                <img src={smalImage} alt="" />
+                                </div>
+                                <div className='w-auto p-2 border-b-4 border-baseColor rounded-full bg-softGray'>
+                                <img src={smalImage} alt="" />
+                                </div>
                         </div>
                     </div>
                     <div className='w-3/4 md:w-1/4 gap-4 flex items-start flex-col justify-evenly py-12'>
@@ -73,18 +87,31 @@ const ProductDetails = () => {
                             <Button variant={"default"} className='flex flex-row justify-evenly items-center bg-baseColor rounded-full text-white py-7 px-6 gap-5 relative  border-2 border-baseColor md:w-2/3 w-full'>
                                 <span className='text-lg font-Averia font-medium'>Buy Now</span>
                                 <img src={Sackwhite} alt="" className='text-white w-7' color='#fff' />
-
                             </Button>
-
-
                         </div>
-
-
-                        <p>Rating: {product.rating}</p>
-                        <p>{product.inStock ? 'In Stock' : 'Out of Stock'}</p>
                     </div>
                 </div>
 
+                    <div className='w-full flex md:flex-row justify-between items-center md:gap-12 gap-6 my-12'>
+                        <div className='md:w-1/2 w-full rounded-[60px] bg-softGray md:p-8 p-6 mb-8'>
+                            <div className='w-fuu l flex flex-row justify-start items-center gap-4 mb-8'>
+                                <Button className='font-Neue bg-black text-white rounded-full uppercase text-sm font-normal'>DESCRIPTION</Button>
+                                <Button className='font-Neue bg-[#E7E7E7] text-white rounded-full uppercase text-sm font-normal'>ADDITIONAL INFOS</Button>
+                            </div>
+                            <p className='text-black font-Neue font-medium text-lg'>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores omnis eius voluptates quaerat laborum fuga porro itaque suscipit tempore consequatur atque, nihil veniam ex ratione impedit. Unde ratione a minus?
+                            </p>
+                        </div>
+                        <div className='md:w-1/2 w-full rounded-[60px] bg-softGray md:p-8 p-6 mb-8'>
+                            <div className='w-fuu l flex flex-row justify-end items-center gap-4 mb-8'>
+                                <Button className='font-Neue bg-black text-white rounded-full uppercase text-sm font-normal'>DESCRIPTION</Button>
+                                <Button className='font-Neue bg-[#E7E7E7] text-white rounded-full uppercase text-sm font-normal'>ADDITIONAL INFOS</Button>
+                            </div>
+                            <p className='text-black font-Neue font-medium text-lg'>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores omnis eius voluptates quaerat laborum fuga porro itaque suscipit tempore consequatur atque, nihil veniam ex ratione impedit. Unde ratione a minus?
+                            </p>
+                        </div>
+                    </div>
             </div>
 
             <Footer />

@@ -7,7 +7,7 @@ import React from 'react'
 
 const Chekout = () => {
     return (
-        <div>
+        <div className='px-4'>
             <NavBar />
             <div className='container my-4'>
                 <Titles content={"Checkout Your Oder"} text={false} />
@@ -47,49 +47,77 @@ const Chekout = () => {
                 </div>
 
                 <div className="w-full flex md:flex-row flex-col md:gap-12 gap-6 justify-center items-start">
-                    <div className="md:w-1/2 w-full p-8 flex flex-col">
+                    <div className="md:w-1/2 w-full p-8 flex flex-col ">
                         <h1 className='md:text-2xl text-xl font-Neue font-medium text-black mb-8'>Delivery Information</h1>
                         <div className='w-full bg-softGray rounded-[60px] p-4'>
                             <form action="  " className='md:p-12 p-6 rounded-[60px] grid md:grid-cols-2 grid-cols-1 gap-6'>
                                 <div className='col-span-1 w-full'>
                                     <label htmlFor="" className='my-3 font-Neue font-medium text-sm text-black'>Full Name</label>
-                                    <Input type="email" placeholder="Laila Rssi" className='w-full rounded-full border border-[#E0E0E0] text-black placeholder:text-[#E0E0E0] relative mt-3'/>
+                                    <Input type="email" placeholder="Laila Rssi" className='w-full rounded-full border border-[#E0E0E0] text-black placeholder:text-[#E0E0E0] relative mt-3' />
                                 </div>
                                 <div className='col-span-1 w-full'>
                                     <label htmlFor="" className='my-3 font-Neue font-medium text-sm text-black'>Phone Number</label>
-                                    <Input type="phone" placeholder="+3367868-988" className='w-full rounded-full border border-[#E0E0E0] text-black placeholder:text-[#E0E0E0] relative  mt-3'/>
+                                    <Input type="phone" placeholder="+3367868-988" className='w-full rounded-full border border-[#E0E0E0] text-black placeholder:text-[#E0E0E0] relative  mt-3' />
                                 </div>
                                 <div className='col-span-1 w-full'>
                                     <label htmlFor="" className='my-3 font-Neue font-medium text-sm text-black'>Email</label>
-                                    <Input type="email" placeholder="lailarssi@gmail.com" className='w-full rounded-full border border-[#E0E0E0] text-black placeholder:text-[#E0E0E0] relative  mt-3'/>
+                                    <Input type="email" placeholder="lailarssi@gmail.com" className='w-full rounded-full border border-[#E0E0E0] text-black placeholder:text-[#E0E0E0] relative  mt-3' />
                                 </div>
                                 <div className='col-span-1 w-full'>
                                     <label htmlFor="" className='my-3 font-Neue font-medium text-sm text-black'>Country</label>
-                                    <Input type="text" placeholder="French" className='w-full  rounded-full border border-[#E0E0E0] text-black placeholder:text-[#E0E0E0] relative  mt-3'/>
+                                    <Input type="text" placeholder="French" className='w-full  rounded-full border border-[#E0E0E0] text-black placeholder:text-[#E0E0E0] relative  mt-3' />
                                 </div>
                                 <div className='col-span-1 w-full'>
                                     <label htmlFor="" className='my-3 font-Neue font-medium text-sm text-black'>City</label>
-                                    <Input type="text" placeholder="Saint-Denis" className='w-full  rounded-full border border-[#E0E0E0] text-black placeholder:text-[#E0E0E0] relative  mt-3'/>
+                                    <Input type="text" placeholder="Saint-Denis" className='w-full  rounded-full border border-[#E0E0E0] text-black placeholder:text-[#E0E0E0] relative  mt-3' />
                                 </div>
                                 <div className='col-span-1 w-full'>
                                     <label htmlFor="" className='my-3 font-Neue font-medium text-sm text-black'>State</label>
-                                    <Input type="text" placeholder="L'ile de France" className='w-full  rounded-full border border-[#E0E0E0] text-black placeholder:text-[#E0E0E0] relative  mt-3'/>
+                                    <Input type="text" placeholder="L'ile de France" className='w-full  rounded-full border border-[#E0E0E0] text-black placeholder:text-[#E0E0E0] relative  mt-3' />
                                 </div>
-                                
+
                                 <div className='col-span-1 w-full'>
                                     <label htmlFor="" className='my-3 font-Neue font-medium text-sm text-black'>Adress</label>
-                                    <Input type="address" placeholder="N12 Avenue Fountin Imm 12 P34" className='w-full  rounded-full border border-[#E0E0E0] text-black placeholder:text-[#E0E0E0] relative  mt-3'/>
+                                    <Input type="address" placeholder="N12 Avenue Fountin Imm 12 P34" className='w-full  rounded-full border border-[#E0E0E0] text-black placeholder:text-[#E0E0E0] relative  mt-3' />
                                 </div>
                                 <div className='col-span-1 w-full'>
                                     <label htmlFor="" className='my-3 font-Neue font-medium text-sm text-black'>Zip</label>
-                                    <Input type="number" placeholder="93200" className='w-full rounded-full border border-[#E0E0E0] text-black placeholder:text-[#E0E0E0] relative  mt-3'/>
+                                    <Input type="number" placeholder="93200" className='w-full rounded-full border border-[#E0E0E0] text-black placeholder:text-[#E0E0E0] relative  mt-3 ' />
                                 </div>
                             </form>
-                            
+
 
                         </div>
 
-                        
+
+                        <h1 className='md:text-2xl text-xl font-Neue font-medium text-black mb-8 mt-12 '>Delivery Information</h1>
+                        <div className='w-full bg-softGray md:rounded-[60px] rounded-3xl md:p-6 p-3 md:h-52 flex md:flex-row flex-col gap-3 justify-evenly items-center'>
+                            <Badge className='py-2 px-3 rounded-full bg-black text-white font-Neue font-medium gap-2 lg:text-lg text-xs relative w-full'>
+                                <span className='md:w-6 md:h-6 w-3 h-3 rounded-full bg-[#8FF30C]  inline-flex justify-center items-center'>
+                                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 7.83333L6.375 12L16 2" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+                                </span>
+                                Online Payment</Badge>
+                            <Badge className='px-3 py-2 rounded-full bg-none border border-[#E3DDDD] relative text-[#E3DDDD] font-Neue font-medium md:text-lg text-xs gap-3 w-full'>
+                                <span className='md:w-6 md:h-6 w-3 h-3 rounded-full bg-[#E4E4E4]  inline-flex justify-center items-center'>
+                                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg" className=''>
+                                        <path d="M2 7.83333L6.375 12L16 2" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+                                </span>
+                                Cash On Delivery</Badge>
+                            <Badge className='py-2 px-3 rounded-full bg-none border border-[#E3DDDD] relative text-[#E3DDDD] font-Neue font-medium md:text-lg text-xs gap-3 w-full'>
+                                <span className='md:w-6 md:h-6 w-3 h-3 rounded-full bg-[#E4E4E4]   inline-flex justify-center items-center'>
+                                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg" className=''>
+                                        <path d="M2 7.83333L6.375 12L16 2" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+                                </span>
+                                POS On Delivery</Badge>
+                        </div>
+
                     </div>
                     <div className='w-1/2'>tesyt</div>
                 </div>

@@ -3,6 +3,7 @@ import NavBar from '@/components/NavBar'
 import React from 'react'
 
 import imag from "../assets/images/handCrim.png"
+import imagb from "../assets/images/about2.png"
 
 const About = () => {
   return (
@@ -31,6 +32,8 @@ const About = () => {
           </div>
 
         </div>
+
+
         <div className="container md:w-5/6 w-full inline-flex flex-row justify-evenly items-start">
           <div className='flex flex-col items-center md:gap-6 gap-2 justify-center w-1/4'>
               <p className='font-Neue text-4xl md:text-[100px]  font-medium text-black w-full text-center'>+19</p>
@@ -44,7 +47,36 @@ const About = () => {
               <p className='font-Neue text-4xl md:text-[100px]  font-medium text-black w-full text-center'>+30K</p>
               <p className='font-Neue font-medium text-sm md:text-xl text-baseColor w-full text-center'>Customers Reviews</p>
           </div>
-        
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div className='container md:w-5/6 w-full my-12 md:my-24 flex flex-col gap-12 md:gap-24 '>
+          <div className='w-full flex flex-col md:flex-row md:justify-between justify-center items-center gap-8'>
+            <div className='w-full md:w-1/2 flex flex-col  gap-4'>
+              <p className='font-Neue text-sm md:text-lg font-medium text-baseColor'>Ingredients ?</p>
+              <p className='font-Averia text-xl md:text-3xl text-black font-medium w-3/4 md:w-1/2'>Transform Your Skin Elegantly with Our Luxurious and Effective Skincare</p>
+              
+              <ul className='list-decimal list-outside font-Neue font-medium text-lg md:text-xl text-[#B1B1B1]'>
+                <li><p className='font-Neue text-lg md:text-lg text-[#B1B1B1] font-medium w-full md:w-2/3'>I've been using Gloora skincare products</p></li>
+                <li><p className='font-Neue text-lg md:text-lg text-[#B1B1B1] font-medium w-3/4 md:w-2/3'>for the past six months, and the </p></li>
+                <li><p className='font-Neue text-lg md:text-lg text-[#B1B1B1] font-medium w-3/4 md:w-2/3'>transformation in my skin</p></li>
+                <li><p className='font-Neue text-lg md:text-lg text-[#B1B1B1] font-medium w-3/4 md:w-2/3'>has been incredible!</p></li>
+              </ul>
+
+            </div>
+            <div className='rounded-full bg-baseColor/20 border border-baseColor inline-flex justify-center items-center md:p-6 p-3'>
+              <img src={imagb} alt="" className='w-48 md:w-full' />
+
+            </div>
+          </div>
 
         </div>
 

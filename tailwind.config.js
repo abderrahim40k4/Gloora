@@ -19,6 +19,7 @@ export default {
         'footer-bg': "url('src/assets/images/footer-bg.png')",
         'about-bg': "url('src/assets/images/imageHero.png')",
         'product-bg': "url('src/assets/images/products-hero.png')",
+        'about-mid-bg': "url('src/assets/images/bg-aboutmid.png')",
       },
   		borderRadius: {
   			lg: 'var(--radius)',

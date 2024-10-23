@@ -1,4 +1,3 @@
-import React from 'react'
 import { Checkbox } from "@/components/ui/checkbox"
 import { categories, products } from '@/data/testData'
 import { Slider } from "@/components/ui/slider"

@@ -3,7 +3,7 @@ import NavBar from '@/components/NavBar'
 import Titles from '@/components/Titles'
 import { Badge } from '@/components/ui/badge'
 import { Input } from '@/components/ui/input'
-import React from 'react'
+
 
 const Chekout = () => {
     return (
@@ -119,7 +119,14 @@ const Chekout = () => {
                         </div>
 
                     </div>
-                    <div className='w-1/2'>tesyt</div>
+                    <div className='md:w-1/2 w-full p-8 flex flex-col'>
+                    <h1 className='md:text-2xl text-xl font-Neue font-medium text-black mb-8'>Order Summary</h1>
+                    <div className='w-full bg-softGray rounded-[60px] p-4 h-full'>
+
+                    </div>
+
+
+                    </div>
                 </div>
 
 

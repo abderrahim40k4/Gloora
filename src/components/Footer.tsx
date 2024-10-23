@@ -1,4 +1,3 @@
-import React from 'react'
 import { Button } from './ui/button'
 import Arrow from "../assets/icons/arrowNews.svg"
 import Logo from "../assets/images/footerLogo.svg" 

@@ -1,12 +1,11 @@
 import Footer from '@/components/Footer'
-import NavBar from '@/components/NavBar'
-import React from 'react'
 
 import imag from "../assets/images/handCrim.png"
 import imagb from "../assets/images/about2.png"
 import imagCrim from "../assets/images/crime.png"
 import Feedback from '@/components/Home/Fedback'
 import Titles from '@/components/Titles'
+import NavBar from '@/components/NavBar'
 
 const About = () => {
   return (
@@ -167,8 +166,8 @@ const About = () => {
       </div>
 
 
-      {/* <Titles content={"Customer Feedback."} text={false} /> */}
-      {/* <Feedback/> */}
+      <Titles content={"Customer Feedback."} text={false} />
+      <Feedback/>
       <Footer />
     </div>
   )

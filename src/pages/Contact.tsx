@@ -23,8 +23,8 @@ return (
 
         <div className="w-full flex md:flex-row flex-col md:gap-12 gap-6 justify-center items-start">
             <div className="md:w-1/2 w-full p-8 flex flex-col ">
-                <div className='w-full bg-softGray rounded-[60px] p-4'>
-                    <form action="  " className='md:p-12 p-6 rounded-[60px] grid md:grid-cols-2 grid-cols-1 gap-6'>
+                <div className='w-full bg-softGray md:rounded-[60px] rounded-3xl p-4 h-full'>
+                    <form action="  " className='md:p-12 p-2   grid md:grid-cols-2 grid-cols-1 gap-6'>
                         <div className='col-span-1 w-full'>
                             <label htmlFor="" className='my-3 font-Neue font-medium text-sm text-black'>Full Name</label>
                             <Input type="email" placeholder="Laila Rssi" className='w-full rounded-full border border-[#E0E0E0] text-black placeholder:text-[#E0E0E0] relative mt-3' />
@@ -48,21 +48,21 @@ return (
 
 
                 </div>
-                <Button size={"default"} className='rounded-full bg-baseColor my-4 w-1/4 py-2 text-white font-Neue font-medium md:text-lg text-xs w-60'>Send Message</Button>
+                <Button size={"default"} className='rounded-full bg-baseColor my-4 py-2 text-white font-Neue font-medium md:text-lg text-xs w-52 h-12'>Send Message</Button>
             </div>
-            <div className='md:w-1/2 w-full p-8'>
+            <div className='md:w-1/3 w-full p-8'>
                 <div className='w-full border-2 border-softGray p-8 rounded-3xl'>
                         {
                             glooraContact.map((info, index)=>(
-                                <div key={index}>
-                                    <h1>{info.city}</h1>
-                                    <p>{info.feedback}</p>
+                                <div key={index} className='my-6'>
+                                    <h1 className='font-Averia font-normal text-black text-lg md:text-xl'>{info.city}</h1>
+                                    <p className='md:w-3/4 w-full font-Neue font-medium text-[#B1B1B1] my-3' >{info.feedback}</p>
                                     {
                                         info.phoneNumbers.map((element)=>(
-                                            <p>{element}</p>
+                                            <p className='font-Neue font-semibold text-black'>{element}</p>
                                         ))
                                     }
-                                    <p>{info.email}</p>
+                                    <p  className='font-Neue font-semibold text-black'>{info.email}</p>
                                 </div>
                             ))
                         }

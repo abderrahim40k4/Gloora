@@ -1,4 +1,3 @@
-import React from 'react'
 import Background from "../../assets/images/aboutUsbg.png"
 
 const About = () => {

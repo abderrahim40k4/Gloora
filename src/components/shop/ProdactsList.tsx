@@ -11,10 +11,20 @@ import ProdctIm from "../../assets/images/prodact.png"
 import { Link } from 'react-router-dom'
 import { Button } from '../ui/button'
 import { Badge } from '../ui/badge'
+import { useState } from "react"
+import Pagintion from "./Pagintion"
+
 
 
 
 const ProdactsList = () => {
+ const [currentPage , setCurrentPage] = useState(1)
+ const [postePearPage, setPostesPearPage] = useState(6)
+
+ const lastPostIndex = currentPage * postePearPage;
+ const firstPosteIndex = lastPostIndex - postePearPage
+ const curentPost = products.slice(firstPosteIndex, lastPostIndex)
+
   return (
     <div className='w-full container md:px-12 px-3 flex md:flex-row flex-col md:gap-12 gap-8  mt-4'>
       <div className='md:w-1/4 w-full py-12 h-screen md:px-8 px-4  flex flex-col gap-12 bg-softGray rounded-[50px]'>
@@ -44,7 +54,7 @@ const ProdactsList = () => {
 
       <div className="w-full h-auto rounded-[50px] grid md:grid-cols-3 grid-cols-1 grid-rows-2  gap-6 ">
         {
-          products.map((product, index) => (
+          curentPost.map((product, index) => (
             <div className="w-full col-span-1 row-span-1" key={index}>
               <div className="w-full h-80 bg-[#F7F7F7] rounded-3xl p-4 flex justify-between items-start flex-col">
                 <div className="w-full">
@@ -78,7 +88,10 @@ const ProdactsList = () => {
             </div>
           ))
         }
-      <div className="">test</div>
+      <div className="w-full">
+        <Pagintion postesPerPage={postePearPage} totalPostes={products.length} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+       
+      </div>
       </div>
 
 

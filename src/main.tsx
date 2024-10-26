@@ -12,6 +12,7 @@ import About from './pages/About.tsx';
 import ProductDetails from './pages/ProductDetails.tsx';
 import Chekout from './pages/Chekout.tsx';
 import Contact from './pages/Contact.tsx';
+import Offers from './pages/Offers.tsx';
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,11 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <Contact/>,
+    errorElement:<NotFoundPage/>
+  },
+  {
+    path: "/offers",
+    element: <Offers/>,
     errorElement:<NotFoundPage/>
   },
 ]);

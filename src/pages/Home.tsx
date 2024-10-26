@@ -22,9 +22,9 @@ const Home = () => {
     return (
         <div className="mt-5">
             {/* hero section */}
-            <div className="relative h-auto md:p-8 p-2 w-full overflow-hidden rounded-[10%]">
+            <div className="relative h-auto md:p-8 p-2 w-full overflow-hidden md:rounded-[10%] rounded-3xl">
                 <video
-                    className="absolute top-0 md:px-10 px-2 rounded-[10%] left-0 w-full h-full object-cover z-10"
+                    className="absolute top-0 md:px-10 px-2 md:rounded-[10%] rounded-3xl left-0 w-full h-full object-cover z-10"
                     src={Hero}
                     autoPlay
                     loop

@@ -3,9 +3,16 @@ import NavBar from '@/components/NavBar'
 import Titles from '@/components/Titles'
 import { Badge } from '@/components/ui/badge'
 import { Input } from '@/components/ui/input'
+import { cart } from '@/data/testData'
+
+import productIM from "../assets/images/prodact.png"
+import { Button } from '@/components/ui/button'
+import { useState } from 'react'
 
 
 const Chekout = () => {
+
+    let [quontity , setQuontity] =  useState(0)
     return (
         <div className='px-4'>
             <NavBar />
@@ -31,7 +38,7 @@ const Chekout = () => {
                             </svg>
 
                         </span>
-                        Select Product</Badge>
+                        Add Infos</Badge>
                     <svg width="88" height="6" viewBox="0 0 88 6" fill="none" xmlns="http://www.w3.org/2000/svg" className='md:w-[88px] w-8'>
                         <path d="M81.8333 3C81.8333 4.47276 83.0272 5.66667 84.5 5.66667C85.9728 5.66667 87.1667 4.47276 87.1667 3C87.1667 1.52724 85.9728 0.333333 84.5 0.333333C83.0272 0.333333 81.8333 1.52724 81.8333 3ZM0 3.5H84.5V2.5H0V3.5Z" fill="#F1F1F1" />
                     </svg>
@@ -43,7 +50,7 @@ const Chekout = () => {
                             </svg>
 
                         </span>
-                        Add Infos</Badge>
+                        Payed Order</Badge>
                 </div>
 
                 <div className="w-full flex md:flex-row flex-col md:gap-12 gap-6 justify-center items-start">
@@ -119,11 +126,71 @@ const Chekout = () => {
                         </div>
 
                     </div>
-                    <div className='md:w-1/2 w-full p-8 flex flex-col'>
-                    <h1 className='md:text-2xl text-xl font-Neue font-medium text-black mb-8'>Order Summary</h1>
-                    <div className='w-full bg-softGray rounded-[60px] p-4 h-full'>
+                    <div className='md:w-1/2 w-full p-8 flex flex-col h-full'>
+                        <h1 className='md:text-2xl text-xl font-Neue font-medium text-black mb-8'>Order Summary</h1>
+                        <div className='w-full bg-softGray rounded-[60px] p-12 h-full flex flex-col justify-between gap-12 ab'>
+                            <div className='w-full flex flex-col gap-4 md:gap-8 items-start justify-center'>
+                                {
+                                    cart.map((item, index) => (
+                                        <div className='w-full flex flex-row justify-between items-center' key={index}>
+                                            <div className='md:w-24 w-16 md:h-32 h-24 bg-softGray rounded-full inline-flex justify-center items-center md:p-2 p-0 border-2 border-baseColor'><img src={productIM} alt="" className='rounded-full' /></div>
+                                            <div className='flex flex-col justify-evnly items-start'>
+                                                <p className='font-Neue font-medium text-black text-lg md:text-xl '>{item.name}</p>
+                                                <h1 className='font-Neue font-medium text-baseColor text-2xl md:text-6xl'>${item.price}</h1>
+                                            </div>
+                                            <div className='flex flex-row justify-evenly items-center border-2 border-baseColor rounded-full text-baseColor  gap-5 text-lg font-Neue font-medium h-12'>
+                                                <Button variant={"default"} size={"icon"} className='p-0 text-lg' onClick={() => {quontity > 0 ? setQuontity(quontity--):setQuontity(0)}}>
+                                                   -
 
-                    </div>
+                                                </Button>
+                                                    <span>{quontity}</span>
+                                                <Button variant={"default"} size={"icon"} className="p-0"  onClick={() => { setQuontity(quontity++) }}>
+                                                +
+
+                                                </Button>
+                                            </div>
+                                        </div>
+                                    ))
+                                }
+                            </div>
+
+
+
+
+
+                            <div className='w-full flex flex-col justify-center items-center md:mt-48 mt-12'>
+                                <div className='w-full flex flex-row justify-between items-center p-4 border-t-2 border-[#BDBDBD]'>
+                                    <p className='font-Neue font-medium text-lg text-[#BDBDBD]'>
+                                    Subtotal:
+                                    </p>
+                                    <p className='font-Neue font-medium text-3xl text-baseColor'>
+                                    $58.00
+                                    </p>
+
+                                </div>
+                                <div className='w-full flex flex-row justify-between items-center p-4 border-t-2 border-[#BDBDBD]'>
+                                    <p className='font-Neue font-medium text-lg text-[#BDBDBD]'>
+                                    Subtotal:
+                                    </p>
+                                    <p className='font-Neue font-medium text-3xl text-baseColor'>
+                                    $58.00
+                                    </p>
+
+                                </div>
+                                <div className='w-full flex flex-row justify-between items-center p-4 border-t-2 border-[#BDBDBD]'>
+                                    <p className='font-Neue font-medium text-lg text-[#BDBDBD]'>
+                                    Subtotal:
+                                    </p>
+                                    <p className='font-Neue font-medium text-3xl text-baseColor'>
+                                    $58.00
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
 
 
                     </div>

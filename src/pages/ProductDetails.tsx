@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { products } from '../data/testData'; // Import your test data
 import NavBar from '@/components/NavBar';
@@ -13,7 +13,7 @@ import smalImage from "../assets/images/productImage.png"
 
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import Products from './Products';
+
 import Product from '@/components/Home/Product';
 import Titles from '@/components/Titles';
 

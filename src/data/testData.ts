@@ -29,6 +29,15 @@ interface Product {
     phoneNumbers: string[];
     email: string;
 }
+  interface cartInfo {
+    id: number;
+    name: string;
+    price: number;
+    category: string;
+    inStock: boolean;
+    rating: number;
+    quntity:number
+}
 
   // testData.ts
 
@@ -107,6 +116,26 @@ export const products: Product[] = [
       rating: 4.8,
     },
   ];
+  export const cart:cartInfo[] = [
+    {
+        id: 1,
+        name: "Hydrating Serum",
+        price: 19.99,
+        category: "Skin Care",
+        inStock: false,
+        rating: 4.0,
+        quntity:0,
+      },
+      {
+        id: 3,
+        name: "Vitamin C Serum",
+        price: 24.99,
+        category: "Skin Care",
+        inStock: true,
+        rating: 4.8,
+        quntity:0,
+      },
+  ]
   
   // Sample category data
   export const categories: Category[] = [

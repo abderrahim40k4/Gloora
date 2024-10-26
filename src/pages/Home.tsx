@@ -11,6 +11,7 @@ import whitePerv from "../assets/icons/whitePervArr.svg"
 import whiteNext from "../assets/icons/whiteNextArr.svg"
 import whiteSack from "../assets/icons/sackWhite.svg"
 import offerImage from "../assets/images/offerfifty.png"
+import Product from "@/components/Home/Product"
 
 // Import Swiper React components
 
@@ -78,7 +79,7 @@ const Home = () => {
                 <Titles content={"Gloora Product."} text={false} />
 
                 {/* prodct sectin */}
-                {/* <Product /> */}
+                <Product />
                 <Titles content={"Product Categories."} text={true} desc="Transform Your Skin Elegantly with Our Luxurious and Effective Skincare" />
                 <Category />
                 <About />

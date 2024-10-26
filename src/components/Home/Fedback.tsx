@@ -46,13 +46,12 @@ export default function Feedback() {
                         <CarouselItem key={index} className="pt-4 sm:pt-6 flex flex-col justify-between items-center">
                             <Card className="border-none shadow-none w-full sm:w-11/12 md:w-5/6 lg:w-2/3 mx-auto">
                                 <CardContent className="flex flex-col items-center justify-center p-4 sm:p-6 h-full w-full">
-                                    <div className="mb-4 bg-softGray h-24 w-24 sm:h-32 sm:w-32 md:h-40 md:w-40 lg:h-48 lg:w-48 rounded-full overflow-hidden">
+                                    <div className="mb-4 bg-softGray  rounded-full overflow-hidden inline-flex justify-center items-center">
                                         <img
                                             src={item.image}
                                             alt={`${item.name}'s profile`}
-                                            width={200}
-                                            height={200}
-                                            className="w-full h-full object-cover"
+                               
+                                            className="w-40 h-56 object-cover"
                                         />
                                     </div>
                                     <div className="w-full text-center flex flex-col items-center">

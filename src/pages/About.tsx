@@ -56,20 +56,20 @@ const About = () => {
           <div className='container md:w-5/6 w-full inline-flex flex-col justify-evenly items-center my-12'>
             <div className='md:w-[85rem] h-96 w-full md:h-[64rem] bg-baseColor/20 border border-baseColor rounded-full inline-flex justify-center items-center'>
                 <div className='md:w-[81rem] w-11/12 h-[91%] md:h-[60rem] bg-about-mid-bg bg-cover bg-cenetr rounded-full inline-flex justify-center items-center '>
-                      <div className='md:w-1/2 w-2/3 h-2/3 md:h-[42med] bg-baseColor/70 rounded-3xl p-4 md:p-8 flex flex-col'>
-                          <div className='w-full md:h-40 rounded-full bg-about-mid-bg bg-cover inline-flex justify-center items-center'>
-                            <div className='md:w-2/3 w-4/5 flex justify-center items-center flex-col gap-4'>
-                              <p className='font-Averia font-normal md:text-xl text-lg text-white'>You will have
+                      <div className='md:w-1/2 w-3/4 h-2/3 md:h-[42med] bg-baseColor/70 rounded-3xl p-4 md:p-8 flex flex-col'>
+                          <div className='w-full md:h-40 h-48 rounded-full bg-about-mid-bg bg-cover flex justify-center items-center '>
+                            <div className='md:w-2/3 w-5/6 flex justify-center items-center flex-col md:gap-4 gap-1'>
+                              <p className='font-Averia font-normal md:text-xl text-lg text-white text-center'>You will have
                               a natural face by</p>
-                              <p className='font-Averia md:text-[90px] text-3xl text-white'>
+                              <p className='font-Averia md:text-[90px] text-xl text-white'>
                               89%
                               </p>
                             </div>
 
                           </div>
-                            <div className='md:mt-6 mt-2 flex flex-col justify-center items-center text-center text-white md:gap-4'>
+                            <div className='md:mt-6 mt-1 flex flex-col justify-center items-center text-center text-white md:gap-4 gap-1'>
                                 <p className='text-white font-Neue font-medium text-lg md:text-xl'>That Why Gloora</p>
-                                <p className='md:w-2/3 w-full font-Neue text-sm md:text-lg'>unique formulations combine the finest natural ingredients with advanced science to nourish, rejuvenate, and protect your skin, giving you a radiant, healthy glow.</p>
+                                <p className='md:w-2/3 w-full font-Neue text-xs md:text-lg'>unique formulations combine the finest natural ingredients with advanced science to nourish, rejuvenate, and protect your skin, giving you a radiant, healthy glow.</p>
                             </div>
                       </div>
                 </div>

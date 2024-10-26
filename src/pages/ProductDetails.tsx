@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 
 import ProductDetaile from '@/components/shop/productDetaile';
 import Titles from '@/components/Titles';
+import Product from '@/components/Home/Product';
 
 
 const ProductDetails = () => {
@@ -16,7 +17,7 @@ const ProductDetails = () => {
             <div className="container flex flex-col justify-center items-center w-full">
 
                 <Titles content={"Related Products"} text={false} />
-                {/* <Product/> */}
+                <Product/>
             </div>
 
             <Footer />

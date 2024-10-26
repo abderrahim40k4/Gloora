@@ -1,5 +1,5 @@
 
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom'
 
 
 
@@ -16,7 +16,8 @@ import { products } from '@/data/testData';
 import { useState } from 'react';
 
 const ProductDetaile = () => {
-    const { id } = useParams<{ id: string }>(); // Extract the product ID from the URL
+    const { id } = useParams<{ id: string }>(); 
+    // Extract the product ID from the URL
     const product = products.find(p => p.id === parseInt(id)); // Find the product by ID
     const [conter, setCounter] = useState(1)
 

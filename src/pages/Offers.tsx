@@ -1,6 +1,6 @@
 import Footer from '@/components/Footer'
 import NavBar from '@/components/NavBar'
-import ProductDetaile from '../components/shop/ProductDetaile'
+import ProductDetaile from '@/components/shop/ProductDetaile'
 
 const Offers = () => {
     return (

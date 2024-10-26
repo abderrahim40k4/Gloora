@@ -96,10 +96,10 @@ const Product = () => {
                         align: "center",
                         loop: false,
                     }}
-                    className="w-96 flex justify-center items-center  relative "
+                    className="w-96 md:w-full flex justify-center items-center  relative gap-8"
                 >
                     <CarouselPrevious className="border-none md:block hidden " />
-                    <CarouselContent className="flex gap-8 justify-center items-center  mb-6 w-full relative h-[422px]">
+                    <CarouselContent className="flex gap-8 justify-center items-center  mb-6 w-11/12 relative h-[422px]">
                         {
                             prodacts.map((product, index) => (
                                 <CarouselItem className="md-h-[420px] md:basis-1/4 basis-full " key={index} onClick={() => handleHover(product.selected)}>

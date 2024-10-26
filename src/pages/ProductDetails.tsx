@@ -14,7 +14,7 @@ const ProductDetails = () => {
             <NavBar />
             <ProductDetaile/>
            
-            <div className="container flex flex-col justify-center items-center w-full">
+            <div className=" flex flex-col justify-center items-center w-full">
 
                 <Titles content={"Related Products"} text={false} />
                 <Product/>

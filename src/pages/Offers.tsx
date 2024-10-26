@@ -7,7 +7,7 @@ const Offers = () => {
         <div className=''>
             <NavBar />
             <div className='lg:p-10 px-3 py-4 m-auto lg:py-5 relative overflow-hidden flex flex-col gap-6 md:gap-12'>
-                <div className='w-full md:h-[670px] h-92 bg-hero-pattern bg-cover bg-center  rounded-3xl md:p-24 p-6 flex flex-end text-end justify-end items-end'>
+                <div className='w-full md:h-[670px] h-96 bg-hero-pattern bg-cover bg-center  rounded-3xl md:p-24 p-6 flex flex-end text-end justify-end items-end'>
                     <img src="" alt="" />
                     <p className='w-full bottom-4 font-Neue font-medium md:text-6xl text-2xl text-white left-4  '>
                         Get -50% Off

@@ -20,6 +20,7 @@ import Pagintion from "./Pagintion"
 const ProdactsList = () => {
   const [currentPage, setCurrentPage] = useState(1)
   const [postePearPage, setPostesPearPage] = useState(6)
+  setPostesPearPage(6)
 
   const lastPostIndex = currentPage * postePearPage;
   const firstPosteIndex = lastPostIndex - postePearPage

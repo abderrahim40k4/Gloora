@@ -166,7 +166,7 @@ export const products: Product[] = [
       productId: 2,
       userName: "John Doe",
       rating: 4,
-      comment: "Good product, but it takes time to show results.",
+      comment: "I've been using Gloora skincare products for the past six months, and the transformation in my skin has been incredible!.",
       date: "2023-09-25",
     },
     {

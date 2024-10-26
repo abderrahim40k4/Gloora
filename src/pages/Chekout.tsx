@@ -53,11 +53,11 @@ const Chekout = () => {
                         Payed Order</Badge>
                 </div>
 
-                <div className="w-full flex md:flex-row flex-col md:gap-12 gap-6 justify-center items-start">
-                    <div className="md:w-1/2 w-full p-8 flex flex-col ">
+                <div className="w-full flex md:flex-row flex-col md:gap-12 gap-y-6 justify-center items-start">
+                    <div className="md:w-1/2 w-full md:p-8 p-2 flex flex-col ">
                         <h1 className='md:text-2xl text-xl font-Neue font-medium text-black mb-8'>Delivery Information</h1>
-                        <div className='w-full bg-softGray rounded-[60px] p-4'>
-                            <form action="  " className='md:p-12 p-6 rounded-[60px] grid md:grid-cols-2 grid-cols-1 gap-6'>
+                        <div className='w-full bg-softGray md:rounded-[60px] rounded-[30px] md:p-4 p-2 pb-6'>
+                            <form action="  " className='md:p-12 p-3 mt-3 rounded-[60px] grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-3'>
                                 <div className='col-span-1 w-full'>
                                     <label htmlFor="" className='my-3 font-Neue font-medium text-sm text-black'>Full Name</label>
                                     <Input type="email" placeholder="Laila Rssi" className='w-full rounded-full border border-[#E0E0E0] text-black placeholder:text-[#E0E0E0] relative mt-3' />
@@ -126,19 +126,19 @@ const Chekout = () => {
                         </div>
 
                     </div>
-                    <div className='md:w-1/2 w-full p-8 flex flex-col h-full'>
+                    <div className='md:w-1/2 w-full md:p-8 p-2 flex flex-col h-full'>
                         <h1 className='md:text-2xl text-xl font-Neue font-medium text-black mb-8'>Order Summary</h1>
-                        <div className='w-full bg-softGray rounded-[60px] p-12 h-full flex flex-col justify-between gap-12 ab'>
+                        <div className='w-full bg-softGray xl:rounded-[60px] rounded-[30px] md:p-12 py-6 px-2 h-full flex flex-col justify-between md:gap-12 gap-4'>
                             <div className='w-full flex flex-col gap-4 md:gap-8 items-start justify-center'>
                                 {
                                     cart.map((item, index) => (
                                         <div className='w-full flex flex-row justify-between items-center' key={index}>
                                             <div className='md:w-24 w-16 md:h-32 h-24 bg-softGray rounded-full inline-flex justify-center items-center md:p-2 p-0 border-2 border-baseColor'><img src={productIM} alt="" className='rounded-full' /></div>
                                             <div className='flex flex-col justify-evnly items-start'>
-                                                <p className='font-Neue font-medium text-black text-lg md:text-xl '>{item.name}</p>
-                                                <h1 className='font-Neue font-medium text-baseColor text-2xl md:text-6xl'>${item.price}</h1>
+                                                <p className='font-Neue font-medium text-black text-sm md:text-xl '>{item.name}</p>
+                                                <h1 className='font-Neue font-medium text-baseColor text-xl md:text-6xl'>${item.price}</h1>
                                             </div>
-                                            <div className='flex flex-row justify-evenly items-center border-2 border-baseColor rounded-full text-baseColor  gap-5 text-lg font-Neue font-medium h-12'>
+                                            <div className='flex flex-row justify-evenly items-center border-2 border-baseColor rounded-full text-baseColor  md:gap-5 gap-2 text-lg font-Neue font-medium md:h-12 h-9 w-auto'>
                                                 <Button variant={"default"} size={"icon"} className='p-0 text-lg' onClick={() => {quontity > 0 ? setQuontity(quontity--):setQuontity(0)}}>
                                                    -
 

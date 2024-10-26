@@ -1,5 +1,5 @@
 import  { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { products } from '../data/testData'; // Import your test data
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
@@ -16,11 +16,14 @@ import { Badge } from '@/components/ui/badge';
 
 import Product from '@/components/Home/Product';
 import Titles from '@/components/Titles';
+import Reviews from '@/components/shop/Reviews';
+
 
 const ProductDetails = () => {
     const { id } = useParams<{ id: string }>(); // Extract the product ID from the URL
     const product = products.find(p => p.id === parseInt(id)); // Find the product by ID
     const [conter, setCounter] = useState(1)
+    
     if (!product) {
         return <p>Product not found!</p>;
     }
@@ -87,16 +90,17 @@ const ProductDetails = () => {
                                 <span className='' onClick={() => { setCounter(conter + 1) }}>+</span>
 
                             </Button>
+                            <Link to={"/chekout"}>
                             <Button variant={"default"} className='flex flex-row justify-evenly items-center bg-baseColor rounded-full text-white py-7 px-6 gap-5 relative  border-2 border-baseColor md:w-2/3 w-full'>
                                 <span className='text-lg font-Averia font-medium'>Buy Now</span>
                                 <img src={Sackwhite} alt="" className='text-white w-7' color='#fff' />
-                            </Button>
+                            </Button></Link>
                         </div>
                     </div>
                 </div>
 
-                <div className='w-full flex md:flex-row flex-col justify-between items-center md:gap-12 gap-6 my-12'>
-                    <div className='md:w-1/2 w-full rounded-[60px] bg-softGray md:p-8 p-6 mb-8'>
+                <div className='w-full h-auto flex md:flex-row flex-col justify-between items-start md:gap-12 gap-6 my-12'>
+                    <div className='md:w-1/2 w-full  h-full rounded-[60px] bg-softGray md:p-8 p-6 mb-8'>
                         <div className='w-fuu l flex flex-row justify-start items-center gap-4 mb-8'>
                             <Button className='font-Neue bg-black text-white rounded-full uppercase text-sm font-normal'>DESCRIPTION</Button>
                             <Button className='font-Neue bg-[#E7E7E7] text-white rounded-full uppercase text-sm font-normal'>ADDITIONAL INFOS</Button>
@@ -105,24 +109,13 @@ const ProductDetails = () => {
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores omnis eius voluptates quaerat laborum fuga porro itaque suscipit tempore consequatur atque, nihil veniam ex ratione impedit. Unde ratione a minus?
                         </p>
                     </div>
-                    <div className='md:w-1/2 w-full rounded-[60px] bg-softGray md:p-8 p-6 mb-8'>
-                        <div className='w-full flex flex-row justify-between items-center mb-4'>
-                            <Button className='font-Neue bg-black text-white rounded-full uppercase text-sm font-normal'>REVIEWS</Button>
-                            <div className='flex flex-row justify-end items-center gap-4'>
-                                <Button className='font-Neue bg-black text-white rounded-full uppercase text-sm font-normal'>DESCRIPTION</Button>
-                                <Button className='font-Neue bg-[#E7E7E7] text-white rounded-full uppercase text-sm font-normal'>ADDITIONAL INFOS</Button>
-                            </div>
-                        </div>
-                        <p className='text-black font-Neue font-medium text-lg'>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores omnis eius voluptates quaerat laborum fuga porro itaque suscipit tempore consequatur atque, nihil veniam ex ratione impedit. Unde ratione a minus?
-                        </p>
-                    </div>
+                    <Reviews />
                 </div>
             </div>
-            <div className="container flex justify-center items-center w-full">
+            <div className="container flex flex-col justify-center items-center w-full">
 
             <Titles content={"Related Products"} text={false}/>
-            <Product/>
+            {/* <Product/> */}
             </div>
 
             <Footer />

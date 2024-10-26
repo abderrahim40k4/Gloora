@@ -4,15 +4,15 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import App from './App.tsx'
+import App from './App'
 import './index.css'
-import NotFoundPage from './components/NotFoundPage.tsx';
-import Products from './pages/Products.tsx';
-import About from './pages/About.tsx';
-import ProductDetails from './pages/ProductDetails.tsx';
-import Chekout from './pages/Chekout.tsx';
-import Contact from './pages/Contact.tsx';
-import Offers from './pages/Offers.tsx';
+import NotFoundPage from './components/NotFoundPage';
+import Products from './pages/Products';
+import About from './pages/About';
+import ProductDetails from './pages/ProductDetails';
+import Chekout from './pages/Chekout';
+import Contact from './pages/Contact';
+import Offers from './pages/Offers';
 
 const router = createBrowserRouter([
   {

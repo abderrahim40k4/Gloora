@@ -2,7 +2,7 @@ import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
 
 
-import ProductDetaile from '@/components/shop/productDetaile';
+import ProductDetaile from '../components/shop/ProductDetaile';
 import Titles from '@/components/Titles';
 import Product from '@/components/Home/Product';
 

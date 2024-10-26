@@ -6,15 +6,19 @@ import { Input } from '@/components/ui/input'
 import { cart } from '@/data/testData'
 
 import productIM from "../assets/images/prodact.png"
+import Sackwhite from "../assets/icons/sackWhite.svg"
+
+
 import { Button } from '@/components/ui/button'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 
 const Chekout = () => {
 
-    let [quontity , setQuontity] =  useState(0)
+    let [quontity, setQuontity] = useState(0)
     return (
-        <div className='px-4'>
+        <div className=''>
             <NavBar />
             <div className='container my-4'>
                 <Titles content={"Checkout Your Oder"} text={false} />
@@ -139,13 +143,13 @@ const Chekout = () => {
                                                 <h1 className='font-Neue font-medium text-baseColor text-xl md:text-6xl'>${item.price}</h1>
                                             </div>
                                             <div className='flex flex-row justify-evenly items-center border-2 border-baseColor rounded-full text-baseColor  md:gap-5 gap-2 text-lg font-Neue font-medium md:h-12 h-9 w-auto'>
-                                                <Button variant={"default"} size={"icon"} className='p-0 text-lg' onClick={() => {quontity > 0 ? setQuontity(quontity--):setQuontity(0)}}>
-                                                   -
+                                                <Button variant={"default"} size={"icon"} className='p-0 text-lg' onClick={() => { quontity > 0 ? setQuontity(quontity--) : setQuontity(0) }}>
+                                                    -
 
                                                 </Button>
-                                                    <span>{quontity}</span>
-                                                <Button variant={"default"} size={"icon"} className="p-0"  onClick={() => { setQuontity(quontity++) }}>
-                                                +
+                                                <span>{quontity}</span>
+                                                <Button variant={"default"} size={"icon"} className="p-0" onClick={() => { setQuontity(quontity++) }}>
+                                                    +
 
                                                 </Button>
                                             </div>
@@ -161,30 +165,38 @@ const Chekout = () => {
                             <div className='w-full flex flex-col justify-center items-center md:mt-48 mt-12'>
                                 <div className='w-full flex flex-row justify-between items-center p-4 border-t-2 border-[#BDBDBD]'>
                                     <p className='font-Neue font-medium text-lg text-[#BDBDBD]'>
-                                    Subtotal:
+                                        Subtotal:
                                     </p>
                                     <p className='font-Neue font-medium text-3xl text-baseColor'>
-                                    $58.00
+                                        $58.00
                                     </p>
 
                                 </div>
                                 <div className='w-full flex flex-row justify-between items-center p-4 border-t-2 border-[#BDBDBD]'>
                                     <p className='font-Neue font-medium text-lg text-[#BDBDBD]'>
-                                    Subtotal:
+                                        Subtotal:
                                     </p>
                                     <p className='font-Neue font-medium text-3xl text-baseColor'>
-                                    $58.00
+                                        $58.00
                                     </p>
 
                                 </div>
                                 <div className='w-full flex flex-row justify-between items-center p-4 border-t-2 border-[#BDBDBD]'>
                                     <p className='font-Neue font-medium text-lg text-[#BDBDBD]'>
-                                    Subtotal:
+                                        Subtotal:
                                     </p>
                                     <p className='font-Neue font-medium text-3xl text-baseColor'>
-                                    $58.00
+                                        $58.00
                                     </p>
 
+                                </div>
+
+                                <div className='w-full flex justify-center items-center'>
+                                    <Link to={"/chekout"}>
+                                        <Button variant={"default"} className='flex flex-row justify-evenly items-center bg-baseColor rounded-full text-white py-7 px-6 gap-5 relative  border-2 border-baseColor md:w-2/3 w-full'>
+                                            <span className='text-lg font-Averia font-medium'>Buy Now</span>
+                                            <img src={Sackwhite} alt="" className='text-white w-7' color='#fff' />
+                                        </Button></Link>
                                 </div>
 
                             </div>

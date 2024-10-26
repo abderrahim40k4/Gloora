@@ -27,7 +27,7 @@ const Home = () => {
             {/* hero section */}
             <div className="relative h-auto md:p-8 p-2 w-full overflow-hidden rounded-[10%]">
                 <video
-                    className="absolute top-0 md:px-10 px-2 rounded-[10%] left-0 w-full h-full object-cover"
+                    className="absolute top-0 md:px-10 px-2 rounded-[10%] left-0 w-full h-full object-cover z-10"
                     src={Hero}
                     autoPlay
                     loop
@@ -82,7 +82,7 @@ const Home = () => {
                 <Titles content={"Gloora Product."} text={false} />
 
                 {/* prodct sectin */}
-                <Product />
+                {/* <Product /> */}
                 <Titles content={"Product Categories."} text={true} desc="Transform Your Skin Elegantly with Our Luxurious and Effective Skincare" />
                 <Category />
                 <About />

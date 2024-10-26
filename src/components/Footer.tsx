@@ -24,11 +24,11 @@ const links: LinkGroup[] = [
             },
             {
                 name:"About Us",
-                path:'',
+                path:'/about',
             },
             {
                 name:"Contact Us",
-                path:'/',
+                path:'/contact',
             },
         ]
     },

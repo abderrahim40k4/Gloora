@@ -1,6 +1,7 @@
-import React from 'react'
+
 import { Button } from '../ui/button';
 import Arrow from "../../assets/icons/inlinArrow.svg"
+import imgPoduct from "../../assets/images/bg-small.png"
 
 interface SpecialOffer {
   id: number;
@@ -19,6 +20,8 @@ const Offers = () => {
     },
     {
       id: 2,
+      title: "30% Discount on Electronics",
+      description: "Save big on all electronic items with a 30% discount.",
     },
     {
       id: 3,
@@ -41,16 +44,18 @@ const Offers = () => {
           specialOffers.map((offer, index) => (
             <div
               key={index}
-              className={`${index === 0 ? "md:col-span-3 h-auto md:h-96 bg-hero-pattern bg-cover bg-center" : "md:h-[420px] hover:bg-baseColor/40  bg-softGray h-auto"} col-span-1 rounded-3xl relative p-7 cursor-pointer h-96 ${index === 2 ? "flex flex-col justify-start gap-2 items-center p-0 " : ""}`}
+              className={`${index === 0 ? "md:col-span-3 h-96 md:h-96 bg-hero-pattern bg-cover bg-center" : "md:h-[420px] hover:bg-baseColor/40  bg-softGray h-96"} col-span-1 rounded-3xl relative p-7 cursor-pointer h-96 ${index === 2 ? "flex flex-col justify-start gap-2 items-center p-0 " : ""}`}
             >
               {/* You can include the content of the offer here */}
               <Button size={"icon"} variant={"ghost"} className='absolute top-2 right-2 w-12 h-12'><img src={Arrow} className="w-full " alt="" /></Button>
               {
-                index === 2 ? <div className='w-full h-4/5 bg-footer-texture rounded-3xl absolute bottom-0 bg-cover bg-no-repeat bg-center'>
-                    <div className=''>
-
+                index === 2 ? <div>
+                    <div className='relative w-full h-full'>
+                        <p className='font-Neue font-medium text-black text-2xl md:text-4xl'>{offer.title}</p>
+                        <p className='w-full font-Neue text-baseColor text-lg md:text-2xl font-normal'>Gloora Pack</p>
+                        <img src={imgPoduct} alt="" className=' bottom-0'/>
                     </div>
-                </div> : <div className='w-full relative h-full'>
+                </div>: <div className='w-full relative h-full'>
                     <p className='w-full bottom-4 font-Neue font-medium md:text-3xl text-white left-4 absolute '>
 
                         {offer.title}

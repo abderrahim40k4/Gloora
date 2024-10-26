@@ -1,7 +1,3 @@
-
-
-
-import Product from "../components/Home/Product"
 import Category from "../components/Home/Category"
 import Titles from "../components/Titles"
 import About from "../components/Home/About"

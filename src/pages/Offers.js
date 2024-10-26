@@ -1,0 +1,8 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import Footer from '@/components/Footer';
+import NavBar from '@/components/NavBar';
+import ProductDetaile from '../components/shop/ProductDetaile';
+const Offers = () => {
+    return (_jsxs("div", { className: '', children: [_jsx(NavBar, {}), _jsxs("div", { className: 'lg:p-10 px-3 py-4 m-auto lg:py-5 relative overflow-hidden flex flex-col gap-6 md:gap-12', children: [_jsxs("div", { className: 'w-full md:h-[670px] h-96 bg-hero-pattern bg-cover bg-center  rounded-3xl md:p-24 p-6 flex flex-end text-end justify-end items-end', children: [_jsx("img", { src: "", alt: "" }), _jsx("p", { className: 'w-full bottom-4 font-Neue font-medium md:text-6xl text-2xl text-white left-4  ', children: "Get -50% Off" })] }), _jsxs("div", { className: 'w-full flex flex-col md:flex-row justify-between items-center gap-6 md:gap-12', children: [_jsx("div", { className: 'md:w-2/3 w-full bg-softGray h-80 md:h-[600px] rounded-3xl' }), _jsx("div", { className: 'md:w-1/3 w-full bg-softGray h-80 md:h-[600px] rounded-3xl' })] })] }), _jsx("div", { children: _jsx(ProductDetaile, {}) }), _jsx("div", { className: 'lg:p-10 px-3 py-4 m-auto lg:py-5 relative overflow-hidden flex flex-col gap-6 md:gap-12', children: _jsxs("div", { className: 'w-full flex flex-col md:flex-row justify-between items-center gap-6 md:gap-12', children: [_jsx("div", { className: 'md:w-2/3 w-full bg-softGray h-80 md:h-[600px] rounded-3xl' }), _jsx("div", { className: 'md:w-1/3 w-full bg-softGray h-80 md:h-[600px] rounded-3xl' })] }) }), _jsx(Footer, {})] }));
+};
+export default Offers;

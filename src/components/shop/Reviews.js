@@ -1,0 +1,8 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { Button } from "../ui/button";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, } from "@/components/ui/carousel";
+import { reviews } from '@/data/testData';
+const Reviews = () => {
+    return (_jsxs("div", { className: 'md:w-1/2 w-full rounded-[60px] bg-softGray md:p-8 p-6 mb-4', children: [_jsx("div", { className: 'w-full flex flex-row justify-between items-center mb-0', children: _jsx(Button, { className: 'font-Neue bg-black text-white rounded-full uppercase text-sm font-normal', children: "REVIEWS" }) }), _jsx("div", { children: _jsxs(Carousel, { children: [_jsxs("div", { className: "w-full inline-flex justify-end items-center gap-3", children: [_jsx(CarouselPrevious, { className: "border-baseColor bg-none" }), _jsx(CarouselNext, { className: "border-baseColor bg-none" })] }), _jsx(CarouselContent, { children: reviews.map((reviw, index) => (_jsxs(CarouselItem, { className: "relative flex flex-col gap-6 ", children: [_jsxs("div", { className: "w-ful flex flex-row justify-start gap-4 md:gap-6 items-center", children: [_jsx("div", { className: "w-20 h-28 rounded-full bg-white", children: _jsx("img", { src: reviw.userName, alt: "" }) }), _jsxs("div", { className: "w-auto flex flex-col justify-evenly items-start", children: [_jsx("p", { className: "font-Neue font-medium text-2xl text-black", children: reviw.userName }), _jsx("p", { children: reviw.date })] })] }), _jsx("div", { className: "w-full font-Neue text-black text-xl font-medium", children: reviw.comment })] }, index))) })] }) })] }));
+};
+export default Reviews;

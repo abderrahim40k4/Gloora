@@ -19,8 +19,8 @@ import Pagintion from "./Pagintion"
 
 const ProdactsList = () => {
   const [currentPage, setCurrentPage] = useState(1)
-  const [postePearPage, setPostesPearPage] = useState(6)
-  setPostesPearPage(6)
+  const [postePearPage] = useState(6)
+ 
 
   const lastPostIndex = currentPage * postePearPage;
   const firstPosteIndex = lastPostIndex - postePearPage
@@ -29,7 +29,7 @@ const ProdactsList = () => {
   return (
     <div className="w-full">
       <div className='w-full md:px-12 px-3 flex md:flex-row flex-col md:gap-12 gap-8  mt-4'>
-        <div className='md:w-1/3 w-full py-12 h-screen md:px-8 px-4  flex flex-col gap-12 bg-softGray rounded-[50px]'>
+        <div className='md:w-1/3 w-full py-12 md:h-screen md:px-8 px-4  flex flex-col gap-12 bg-softGray rounded-[50px]'>
           <div className=''>
             <p className='font-Neue font-medium text-lg mb-6'>Product Categories</p>
             {

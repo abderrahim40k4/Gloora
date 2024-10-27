@@ -3,15 +3,15 @@ import Background from "../../assets/images/aboutUsbg.png"
 const About = () => {
   return (
     
-    <div className="w-full inline-flex justify-center items-center ">
-        <img src={Background} alt="" className='w-full object-fill static md:h-auto h-[900px]' />
-        <div className='z-50 absolute md:w-2/4 w-4/5 h-[37rem] bg-baseColor/75 rounded-3xl p-6 flex flex-col gap-8'>
-            <div className="w-full bg-opacity-10 bg-white h-64 rounded-xl"></div>
-            <div className='w-full inline-flex justify-between items-center px-2'>
+    <div className=" inline-flex justify-center items-center relative overflow-hidden h-[898px] md:h-[1025px] w-full">
+        <img src={Background} alt="" className='object-cover h-full z-10   absolute' />
+        <div className='md:w-2/4 w-4/5 md:h-[37rem] h-[497px] bg-baseColor/75 rounded-3xl  md:pt-8 pb-12 md:px-8 px-4 pt-4 flex flex-col md:gap-8  md:justify-start justify-evenly md:items-start  relative z-50'>
+            <div className="w-full bg-opacity-10 bg-white md:h-64 h-[135px] rounded-3xl"></div>
+            <div className='w-full flex flex-col md:flex-row justify-between items-center px-2'>
                 <p className='font-Neue font-medium text-white text-lg md:text-2xl'>Why Gloora</p>
                 <p className='font-Averia font-medium text-3xl md:text-6xl text-white'>89%</p>
             </div>
-            <div className='px-2 text-white font-Neue text-lg md:text-xl w-3/4'>
+            <div className='text-white font-Neue text-sm md:text-2xl md:w-3/4 w-full text-center md:text-start'>
                 unique formulations combine the finest natural ingredients with advanced science to nourish, rejuvenate, and protect your skin, giving you a radiant, healthy glow.
             </div>
         </div>

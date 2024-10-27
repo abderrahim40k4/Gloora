@@ -64,7 +64,7 @@ export default function Feedback() {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <div className="flex justify-center mt-4 space-x-4">
+                <div className="flex justify-center gap-4">
                     <CarouselPrevious className="relative border-baseColor" />
                     <CarouselNext className="relative border-baseColor" />
                 </div>

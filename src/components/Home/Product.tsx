@@ -103,7 +103,7 @@ const Product = () => {
                         {
                             prodacts.map((product, index) => (
                                 <CarouselItem className="md-h-[420px] md:basis-1/4 basis-full " key={index} onClick={() => handleHover(product.selected)}>
-                                    <div className="w-full h-auto bg-[#F7F7F7] rounded-3xl p-4 flex justify-between items-start flex-col">
+                                    <div className="w-full h-auto bg-[#FCFCFC] rounded-3xl p-4 flex justify-between items-start flex-col">
                                         <div className="w-full">
                                             <Badge variant={"default"} className="px-4 py-2 rounded-full bg-black text-white font-Neue text-sm font-light">-{product.discount}%</Badge>
                                         </div>

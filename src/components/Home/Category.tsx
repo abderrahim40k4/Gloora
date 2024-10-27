@@ -63,7 +63,9 @@ const Category = () => {
                         categorys.map((category, index)=>(
                             <CarouselItem className="basis-full w-full flex  justify-center items-center relative" key={index}>
                             <div  className=" flex flex-col justify-between gap-6 items-center w-full ">
-                                <div className={`lg:w-[320px] w-full lg:h-[520px] h-auto border border-baseColor bg-baseColor/50 rounded-full`}></div>
+                                <div className={`lg:w-[320px] lg:h-[520px] h-[299px] w-[211px] border border-baseColor bg-baseColor/50 rounded-full`}>
+                                
+                                </div>
                                 <div className="my-6 flex flex-col justify-center items-center gap-4 w-full">
                                     <p className="font-Neue lg:text-lg text-sm text-baseColor ">{category.title}</p>
                                     <p className="w-full text-center md:text-2xl text-lg font-Averia font-medium text-[#979797] lg:w-1/3 ">{category.desc}</p>

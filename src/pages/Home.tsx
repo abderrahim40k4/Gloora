@@ -45,7 +45,7 @@ const Home = () => {
                     </div>
                     <div className="w-full h-full flex flex-row justify-end gap-4 items-end relative mb-16 md:mb-4">
                         <div className="h-1/2  flex flex-col justify-center gap-4 items-end">
-                            <div className="w-full flex flex-row md:justify-between justify-start gap-4">
+                            <div className="w-full flex flex-row md:justify-end justify-start gap-2">
                                 <Button className="bg-black text-white rounded-full font-Averia" variant={"default"} size={"sm"}>Skin Care</Button>
                                 <Button className="text-black bg-white rounded-full font-Averia" variant={"default"} size={"sm"}>Face Care</Button>
                                 <Link to={"/products"}><Button className="bg-baseColor text-white rounded-full font-Neue md:flex hidden" variant={"default"} size={"sm"}>

@@ -96,7 +96,7 @@ const Product = () => {
                         align: "center",
                         loop: false,
                     }}
-                    className="w-96 md:w-full flex justify-center items-center  relative gap-8"
+                    className="w-80 md:w-full flex justify-center items-center  relative gap-8"
                 >
                     <CarouselPrevious className="border-none md:block hidden " />
                     <CarouselContent className="flex gap-8 justify-center items-center  mb-6 w-11/12 relative h-[422px]">

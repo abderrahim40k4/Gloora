@@ -31,9 +31,9 @@ const Home = () => {
                     muted
                 />
                 <div className="relative z-10 w-full h-full flex md:flex-row flex-col p-8 md:p-24 md:items-end items-center justify-between gap-12">
-                    <div className="w-full md:w-1/2 h-full flex flex-col justify-evenly items-start md:gap-44 gap-12 my-4">
-                        <div className="flex flex-col md:gap-12 gap-4  my-12">
-                            <p className="w-full font-Neue text-2xl md:text-7xl font-bold text-white my-1 md:my-4">Unlock Your Skin's
+                    <div className="w-full md:w-2/3 h-full flex flex-col justify-evenly items-start md:gap-44 gap-12 my-4">
+                        <div className="flex flex-col md:gap-y-12 gap-4  my-12">
+                            <p className="w-full font-Neue text-2xl md:text-6xl font-bold text-white my-1 md:my-4">Unlock Your Skin's
                                 Natural Beauty</p>
                             <p className="text-xl md:text-5xl font-Averia text-white font-normal">Discover the Secret to Flawless Skin</p>
                         </div>

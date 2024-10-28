@@ -193,7 +193,7 @@ const Chekout = () => {
 
                                 <div className='w-full flex justify-center items-center'>
                                     <Link to={"/chekout"}>
-                                        <Button variant={"default"} className='flex flex-row justify-evenly items-center bg-baseColor rounded-full text-white py-7 px-6 gap-5 relative  border-2 border-baseColor md:w-2/3 w-full'>
+                                        <Button variant={"default"} className='flex flex-row justify-evenly items-center bg-baseColor rounded-full text-white py-7 px-6 gap-5 relative  border-2 border-baseColor w-full'>
                                             <span className='text-lg font-Averia font-medium'>Buy Now</span>
                                             <img src={Sackwhite} alt="" className='text-white w-7' color='#fff' />
                                         </Button></Link>

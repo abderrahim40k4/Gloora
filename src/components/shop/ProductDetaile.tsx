@@ -82,15 +82,15 @@ const ProductDetaile = () => {
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
                         </div>
 
-                        <div className='mt-4 w-full flex md:flex-row flex-col justify-evenly items-center gap-12'>
+                        <div className='mt-4 w-full flex md:flex-row flex-col justify-evenly items-center gap-6'>
                             <Button variant={"default"} size={"lg"} className='flex flex-row justify-evenly items-center border-2 border-baseColor rounded-full text-baseColor py-7 px-6 gap-5 text-lg font-Neue font-medium md:w-1/2 w-full'>
                                 <span className='' onClick={() => { setCounter(conter - 1) }}>-</span>
                                 <span>{conter}</span>
                                 <span className='' onClick={() => { setCounter(conter + 1) }}>+</span>
 
                             </Button>
-                            <Link to={"/chekout"} className='w-1/2'>
-                                <Button variant={"default"} size={"lg"} className='flex flex-row justify-center items-center bg-baseColor rounded-full text-white py-7 gap-1 relative  border-2 border-baseColor  w-full'>
+                            <Link to={"/chekout"} className='md:w-1/2 w-2/3'>
+                                <Button variant={"default"} size={"lg"} className='flex flex-row justify-center items-center bg-baseColor rounded-full text-white py-7 gap-1   border-2 border-baseColor  w-full relative'>
                                     <span className='text-lg font-Averia font-medium'>Buy Now</span>
                                     <img src={Sackwhite} alt="" className='text-white w-7' color='#fff' />
                                 </Button></Link>

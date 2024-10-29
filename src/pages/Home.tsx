@@ -82,7 +82,7 @@ const Home = () => {
                 <Product />
                 <Titles content={"Product Categories."} text={true} desc="Transform Your Skin Elegantly with Our Luxurious and Effective Skincare" />
                 <Category />
-                {/* <About /> */}
+                <About />
                 <Titles content={"Customer Feedback."} text={false} />
                 <Fedback />
                 <Titles content={"Gloora Offers.."} text={true} desc="Transform Your Skin Elegantly with Our Luxurious and Effective Skincare" />

@@ -3,7 +3,7 @@ import Background from "../../assets/images/aboutUsbg.png"
 const About = () => {
   return (
     
-    <div className=" inline-flex justify-center items-center relative overflow-hidden h-[898px] md:h-[1025px] w-full">
+    <div className=" inline-flex justify-center items-center relative overflow-clip h-[898px] md:h-[1025px] w-full">
         <img src={Background} alt="" className='object-cover h-full z-10   absolute w-full' />
         <div className='md:w-2/4 w-4/5 md:h-[37rem] h-[400px] bg-baseColor/75 rounded-3xl  md:pt-8 pb-12 md:px-8 px-4 flex flex-col md:gap-8  md:justify-start justify-start gap-6 pt-4 md:items-start  relative z-50'>
             <div className="w-full bg-opacity-10 bg-white md:h-64 h-[135px] rounded-3xl"></div>

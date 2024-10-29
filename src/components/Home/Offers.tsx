@@ -44,21 +44,21 @@ const Offers = () => {
           specialOffers.map((offer, index) => (
             <div
               key={index}
-              className={`${index === 0 ? "md:col-span-3 h-96 md:h-96 bg-hero-pattern bg-cover bg-center bg-softGray" : "md:h-[420px] hover:bg-baseColor/40  bg-softGray h-96"} col-span-1 rounded-3xl relative p-4  cursor-pointer h-96 ${index === 2 ? "flex flex-col justify-start gap-2 items-center p-0 " : ""}`}
+              className={`${index === 0 ? "md:col-span-3 h-96 md:h-96 bg-hero-pattern bg-cover bg-center bg-softGray" : "md:h-[420px] hover:bg-baseColor/40  bg-softGray h-96"} col-span-1 rounded-3xl relative md:p-4 p-2  cursor-pointer h-96 ${index === 2 ? "flex flex-col justify-start gap-0 items-center p-0 " : ""}`}
             >
               {/* You can include the content of the offer here */}
-              <Button size={"icon"} variant={"ghost"} className='absolute top-2 right-2 w-12 h-12'><img src={Arrow} className="w-full " alt="" /></Button>
+              <div className='w-full inline-flex justify-end items-end right-2 absolute'><Button size={"icon"} variant={"ghost"} className='w-12 h-12'><img src={Arrow} className="w-full " alt="" /></Button></div>
               {
                 index === 2 ? <div>
-                    <div className='relative w-full h-full justify-between gap-3 flex flex-col'>
-                      <div>
-                        <p className='font-Neue font-medium text-black text-2xl md:text-2xl'>{offer.title}</p>
-                        <p className='w-full font-Neue text-baseColor text-lg md:text-xl font-normal'>Gloora Pack</p>
+                    <div className='relative w-full h-full md:justify-between justify-between items-center md:gap-3 gap-4 flex flex-col py-4'>
+                      <div className=''>
+                        <p className='font-Neue font-medium text-black text-lg md:text-2xl'>{offer.title}</p>
+                        <p className='w-full font-Neue text-baseColor text-sm md:text-xl text-center font-normal'>Gloora Pack</p>
                       </div>
-                        <img src={imgPoduct} alt="" className=' bottom-0 w-full'/>
+                        <img src={imgPoduct} alt="" className='mt-1'/>
                     </div>
                 </div>: <div className='w-full relative h-full'>
-                    <p className='w-full bottom-4 font-Neue font-medium md:text-5xl text-2xl text-white left-4 absolute '>
+                    <p className='w-full bottom-4 font-Neue font-medium md:text-5xl text-2xl text-white md:left-4 left-1 absolute '>
 
                         {offer.title}
                     </p>

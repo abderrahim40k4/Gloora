@@ -39,8 +39,8 @@ export default function Feedback() {
   ];
 
   return (
-    <div className="w-full px-4 py-3 mb-12 relative">
-            <Carousel className="mx-auto my-4 w-full">
+    <div className="w-full px-4 py-3 mb-12 relative flex ">
+            <Carousel className="mx-auto my-4 w-full flex flex-col gap-2">
                 <CarouselContent className="w-full">
                     {items.map((item, index) => (
                         <CarouselItem key={index} className="pt-4 sm:pt-6 flex flex-col justify-between items-center">
@@ -64,7 +64,7 @@ export default function Feedback() {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <div className="flex justify-center gap-4">
+                <div className="flex justify-center md:gap-4 gap-2 w-full i ">
                     <CarouselPrevious className="relative border-baseColor" />
                     <CarouselNext className="relative border-baseColor" />
                 </div>

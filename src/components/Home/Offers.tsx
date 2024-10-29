@@ -58,7 +58,7 @@ const Offers = () => {
                         <img src={imgPoduct} alt="" className='mt-1'/>
                     </div>
                 </div>: <div className='w-full relative h-full md: mt-3'>
-                    <p className='w-full bottom-4 font-Neue font-medium md:text-5xl text-2xl text-white md:left-4 left-1 absolute '>
+                    <p className='w-11/12 bottom-4 font-Neue font-medium md:text-5xl text-2xl text-white md:left-4 left-1 absolute '>
 
                         {offer.title}
                     </p>

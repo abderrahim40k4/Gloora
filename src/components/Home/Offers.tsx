@@ -50,14 +50,14 @@ const Offers = () => {
               <div className='w-full inline-flex justify-end items-end right-2 absolute'><Button size={"icon"} variant={"ghost"} className='w-12 h-12'><img src={Arrow} className="w-full " alt="" /></Button></div>
               {
                 index === 2 ? <div>
-                    <div className='relative w-full h-full md:justify-between justify-between items-center md:gap-3 gap-4 flex flex-col py-4'>
+                    <div className='relative w-full h-full md:justify-between justify-between items-center md:items-start md:gap-3 gap-4 flex flex-col py-4'>
                       <div className=''>
                         <p className='font-Neue font-medium text-black text-lg md:text-2xl'>{offer.title}</p>
-                        <p className='w-full font-Neue text-baseColor text-sm md:text-xl text-center font-normal'>Gloora Pack</p>
+                        <p className='w-full font-Neue text-baseColor text-sm md:text-xl text-center md:text-start font-normal'>Gloora Pack</p>
                       </div>
                         <img src={imgPoduct} alt="" className='mt-1'/>
                     </div>
-                </div>: <div className='w-full relative h-full'>
+                </div>: <div className='w-full relative h-full md: mt-3'>
                     <p className='w-full bottom-4 font-Neue font-medium md:text-5xl text-2xl text-white md:left-4 left-1 absolute '>
 
                         {offer.title}

@@ -58,9 +58,9 @@ const Offers = () => {
           </div>
         </div>
         <div className='w-full flex flex-col md:flex-row justify-between items-end gap-6'>
-          <div className='w-full md:w-1/3  h-[379px]  relative flex flex-col justify-between items-center overflow-hidden  md:p-8 p-4 rounded-[42px] md:rounded-[62px]'>
+          <div className='w-full md:w-1/3  h-[379px]  relative flex flex-col justify-between items-center overflow-hidden  md:p-6 p-4 rounded-[42px] md:rounded-[62px]'>
             <img src={productOffer} alt="" className='absolute object-cover z-10 w-full h-full' />
-            <div className="relative w-full h-full flex flex-col justify-between z-50 pt-3 md:pt-8">
+            <div className="relative w-full h-full flex flex-col justify-between z-50 pt-3 md:pt-4">
               <div className='w-full inline-flex justify-end items-end'>
                 <Button className='w-12  md:w-20 p-1' size={"icon"}><img src={Arrow} alt="w-24 h-24 md:w-32 md:h-32" /></Button>
               </div>
@@ -74,7 +74,7 @@ const Offers = () => {
             </div>
           </div>
 
-          <div className='w-full md:w-1/3  h-[379px]   flex flex-col justify-between items-center overflow-hidden  md:p-6 p-4 rounded-[42px] md:rounded-[62px] gap-6'>
+          <div className='w-full md:w-1/3  h-[379px]   flex flex-col justify-between items-center overflow-hidden  md:px-6 px-4 rounded-[42px] md:rounded-[62px] gap-6'>
           <div className='w-full flex flex-col justify-center items-center md:items-start '>
             <p className='w-full md:text-start text-center text-3xl md:text-4xl font-Neue font-medium text-black'>
             Get -50% Off 
@@ -86,8 +86,8 @@ const Offers = () => {
           </div>
 
           <div className='w-full h-full flex justify-center items-center relative'>
-          <img src={productOffer} alt="" className='absolute object-cover z-10 w-full h-full rounded-3xl' />
-          <div className="relative w-full h-full pt-8 flex flex-col justify-between z-50">
+          <img src={productOffer} alt="" className='absolute object-cover z-10  h-full rounded-3xl' />
+          <div className="relative w-full h-full pt-4 flex flex-col justify-between z-50">
               <div className='w-full inline-flex justify-end items-end'>
                 <Button className='w-12  md:w-20 p-1 relative' size={"icon"}><img src={Arrow} alt="w-24 h-24 md:w-32 md:h-32" /></Button>
               </div>
@@ -96,12 +96,12 @@ const Offers = () => {
 
           </div>
 
-          
-          <div className='w-full md:w-1/3  h-[379px]  relative flex flex-col justify-between items-center overflow-hidden  md:p-6 p-4 rounded-[42px] md:rounded-[62px]'>
+
+          <div className='w-full md:w-1/3  h-[379px]  relative flex flex-col justify-between items-center overflow-hidden  p-2 rounded-[42px] md:rounded-[62px]'>
             <img src={productOffer} alt="" className='absolute object-cover z-10 w-full h-full' />
             <div className="relative w-full h-full pt-8 flex flex-col justify-between z-50">
               <div className='w-full inline-flex justify-end items-end'>
-                <Button className='w-12  md:w-20 p-1 relative' size={"icon"}><img src={Arrow} alt="w-24 h-24 md:w-32 md:h-32" /></Button>
+                <Button className='w-12  md:w-32 p-1 relative' size={"icon"}><img src={Arrow} alt="w-24 h-24 md:w-32 md:h-32" /></Button>
               </div>
               <div className='w-full inline-flex justify-start items-start'>
                 <p className='w-full text-white font-Neue text-2xl lg:text-5xl md:text-3xl font-medium'>

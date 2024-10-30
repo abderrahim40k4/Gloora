@@ -2,6 +2,8 @@
 import { Button } from '../ui/button';
 import Arrow from "../../assets/icons/inlinArrow.svg"
 import imgPoduct from "../../assets/images/bg-small.png"
+import productOffer from "../../assets/images/bg-big.png"
+
 
 interface SpecialOffer {
   id: number;
@@ -39,34 +41,83 @@ const Offers = () => {
 
   return (
     <div className="lg:p-10 px-5 py-8 m-auto lg:py-5 w-full">
-      <div className="grid md:grid-cols-3 grid-cols-1 w-full md:gap-12 gap-6 self-stretch content-between">
-        {
-          specialOffers.map((offer, index) => (
-            <div
-              key={index}
-              className={`${index === 0 ? "md:col-span-3 h-96 md:h-96 bg-hero-pattern bg-cover bg-center bg-softGray" : "md:h-[420px] hover:bg-baseColor/40  bg-softGray h-96"} col-span-1 rounded-3xl relative md:p-4 p-2  cursor-pointer h-96 ${index === 2 ? "flex flex-col justify-start gap-0 items-center p-0 " : ""}`}
-            >
-              {/* You can include the content of the offer here */}
-              <div className='w-full inline-flex justify-end items-end right-2 absolute'><Button size={"icon"} variant={"ghost"} className='w-12 h-12'><img src={Arrow} className="w-full " alt="" /></Button></div>
-              {
-                index === 2 ? <div>
-                    <div className='relative w-full h-full md:justify-between justify-between items-center md:items-start md:gap-3 gap-4 flex flex-col py-4'>
-                      <div className=''>
-                        <p className='font-Neue font-medium text-black text-lg md:text-2xl'>{offer.title}</p>
-                        <p className='w-full font-Neue text-baseColor text-sm md:text-xl text-center md:text-start font-normal'>Gloora Pack</p>
-                      </div>
-                        <img src={imgPoduct} alt="" className='mt-1'/>
-                    </div>
-                </div>: <div className='w-full relative h-full md: mt-3'>
-                    <p className='w-11/12 bottom-4 font-Neue font-medium md:text-5xl text-2xl text-white md:left-4 left-1 absolute '>
-
-                        {offer.title}
-                    </p>
-                </div>
-              }
+      <div className='w-full flex flex-col justify-center items-center gap-4 md:gap-4 lg:gap-6'>
+        <div className='w-full relative flex flex-col justify-between items-center overflow-hidden  md:p-8 p-4 rounded-[42px] md:rounded-[62px] h-[415px] md:h-[625px]'>
+          <img src={productOffer} alt="" className='absolute object-cover z-10 w-full h-full' />
+          <div className="relative w-full h-full flex flex-col justify-between pt-3 md:pt-8 z-50">
+            <div className='w-full inline-flex justify-end items-end'>
+              <Button className='w-12  md:w-20 p-1' size={"icon"}><img src={Arrow} alt="w-24 h-24 md:w-32 md:h-32" /></Button>
             </div>
-          ))
-        }
+            <div className='w-full inline-flex justify-start items-start'>
+              <p className='w-full text-white font-Averia text-2xl lg:text-5xl md:text-3xl font-medium'>
+                {
+                  specialOffers[0].title
+                }</p>
+            </div>
+
+          </div>
+        </div>
+        <div className='w-full flex flex-col md:flex-row justify-between items-end gap-6'>
+          <div className='w-full md:w-1/3  h-[379px]  relative flex flex-col justify-between items-center overflow-hidden  md:p-8 p-4 rounded-[42px] md:rounded-[62px]'>
+            <img src={productOffer} alt="" className='absolute object-cover z-10 w-full h-full' />
+            <div className="relative w-full h-full flex flex-col justify-between z-50 pt-3 md:pt-8">
+              <div className='w-full inline-flex justify-end items-end'>
+                <Button className='w-12  md:w-20 p-1' size={"icon"}><img src={Arrow} alt="w-24 h-24 md:w-32 md:h-32" /></Button>
+              </div>
+              <div className='w-full inline-flex justify-start items-start'>
+                <p className='w-full text-white font-Neue text-2xl lg:text-5xl md:text-3xl font-medium'>
+                  {
+                    specialOffers[1].title
+                  }</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div className='w-full md:w-1/3  h-[379px]   flex flex-col justify-between items-center overflow-hidden  md:p-6 p-4 rounded-[42px] md:rounded-[62px] gap-6'>
+          <div className='w-full flex flex-col justify-center items-center md:items-start '>
+            <p className='w-full md:text-start text-center text-3xl md:text-4xl font-Neue font-medium text-black'>
+            Get -50% Off 
+            </p>
+            <p className='w-full md:text-start text-center text-xl md:text-2xl font-Averia font-normal italic text-baseColor'>
+            Get -50% Off 
+            </p>
+
+          </div>
+
+          <div className='w-full h-full flex justify-center items-center relative'>
+          <img src={productOffer} alt="" className='absolute object-cover z-10 w-full h-full rounded-3xl' />
+          <div className="relative w-full h-full pt-8 flex flex-col justify-between z-50">
+              <div className='w-full inline-flex justify-end items-end'>
+                <Button className='w-12  md:w-20 p-1 relative' size={"icon"}><img src={Arrow} alt="w-24 h-24 md:w-32 md:h-32" /></Button>
+              </div>
+            </div>
+          </div>
+
+          </div>
+
+          
+          <div className='w-full md:w-1/3  h-[379px]  relative flex flex-col justify-between items-center overflow-hidden  md:p-6 p-4 rounded-[42px] md:rounded-[62px]'>
+            <img src={productOffer} alt="" className='absolute object-cover z-10 w-full h-full' />
+            <div className="relative w-full h-full pt-8 flex flex-col justify-between z-50">
+              <div className='w-full inline-flex justify-end items-end'>
+                <Button className='w-12  md:w-20 p-1 relative' size={"icon"}><img src={Arrow} alt="w-24 h-24 md:w-32 md:h-32" /></Button>
+              </div>
+              <div className='w-full inline-flex justify-start items-start'>
+                <p className='w-full text-white font-Neue text-2xl lg:text-5xl md:text-3xl font-medium'>
+                  {
+                    specialOffers[2].title
+                  }</p>
+              </div>
+
+            </div>
+          </div>
+
+
+         
+
+        </div>
+
       </div>
     </div>
   );

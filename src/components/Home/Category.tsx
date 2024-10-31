@@ -6,6 +6,7 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 import { Button } from "../ui/button"
+import iamges from "../../assets/images/imagAbout.png"
 
 import Arrow from "../../assets/icons/arrow.svg"
 
@@ -14,6 +15,7 @@ type categorysType = {
     id: number,
     title: string,
     desc: string,
+    pathImag:string,
     curent:boolean
 
 }
@@ -26,24 +28,28 @@ const Category = () => {
             id: 1,
             title: "Gloora Bag for Meakup",
             desc:"Transform Your Skin Elegantly with Our Luxurious and Effective Skincare",
+            pathImag:iamges,
             curent:false,
         },
         {
             id: 2,
             title: "Gloora Bag for Meakup",
             desc:"Transform Your Skin Elegantly with Our Luxurious and Effective Skincare",
+            pathImag:iamges,
             curent:false,
         },
         {
             id: 3,
             title: "Gloora Bag for Meakup",
             desc:"Transform Your Skin Elegantly with Our Luxurious and Effective Skincare",
+            pathImag:iamges,
             curent:false,
         },
         {
             id: 4,
             title: "Gloora Bag for Meakup",
             desc:"Transform Your Skin Elegantly with Our Luxurious and Effective Skincare",
+            pathImag:iamges,
             curent:false,
         },
     ]
@@ -62,11 +68,14 @@ const Category = () => {
                     {
                         categorys.map((category, index)=>(
                             <CarouselItem className="basis-full w-full flex  justify-center items-center relative" key={index}>
-                            <div  className=" flex flex-col justify-between gap-6 items-center w-full ">
-                                <div className={`lg:w-[320px] lg:h-[520px] h-[299px] w-[211px] border border-baseColor bg-baseColor/50 rounded-full`}>
-                                
+                            <div  className=" flex flex-col justify-between gap-6 items-center w-full overflow-hidden ">
+                                <div className={`lg:w-[320px] lg:h-[520px] h-[200px] w-[138px] border border-baseColor bg-baseColor/20 rounded-full md:p-3 p-1 inline-flex justify-center items-center `}>
+
+                                <img src={iamges} alt="" className="h-3/4 rotate-12 z-10"/>
+                                <img src={category.pathImag} alt="" className="w-full h-full " />
+                                <img src={iamges} alt="" className="h-3/4 -rotate-12 z-10"/>
                                 </div>
-                                <div className="my-6 flex flex-col justify-center items-center gap-4 w-full">
+                                <div className="my-6 flex flex-col justify-center items-center gap-4 w-full ">
                                     <p className="font-Neue lg:text-lg text-sm text-baseColor ">{category.title}</p>
                                     <p className="w-full text-center md:text-2xl text-lg font-Averia font-medium text-[#979797] lg:w-1/3 ">{category.desc}</p>
                                 </div>

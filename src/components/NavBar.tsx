@@ -69,9 +69,9 @@ const NavBar = () => {
 
                 {/* menu mobail */}
 
-                <div className={`w-full h-aouto md:hidden ${handllMenu === true ? "flex" : "hidden"} flex-col justify-start items-start gap-4  bg-[#c16d46] mt-4 rounded-3xl top-8 left-0 p-2 z-50 text-white`}>
+                <div className={`w-full h-aouto md:hidden ${handllMenu === true ? "flex" : "hidden"} flex-col justify-start items-start gap-2  bg-[#c16d46] mt-4 rounded-3xl  left-0 py-4 px-4 text-white`}>
                     <div className="w-full flex flex-row justify-between items-center">
-                        <p className="font-Neue text-xs font-medium">Complet your order</p>
+                        <p className="font-Neue text-sm font-medium">Complet your order</p>
                         <svg width="42" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect y="4" width="58" height="58" rx="29" fill="black" />
                             <path d="M22.625 27.3333V25.0151C22.625 21.601 25.4792 18.8333 29 18.8333C32.5208 18.8333 35.375 21.601 35.375 25.0151V27.3333" stroke="white" stroke-width="2.5" />
@@ -84,14 +84,19 @@ const NavBar = () => {
                     </div>
 
                     <div className="w-full">
-                    <ul className="hidden lg:flex flex-col justify-evenly gap-4">
+                    <ul className=" lg:flex flex-col justify-evenly gap-4">
                             {
                                 list.map((item) => (
-                                    <li key={item.id} className="text-white"><Link to={item.link} onClick={()=>{}}>{item.title}</Link></li>
+                                    <li key={item.id} className="text-white font-Averia text-2xl"><Link to={item.link} onClick={()=>{}}>{item.title}</Link></li>
 
                                 ))
                             }
                         </ul>
+                    </div>
+
+
+                    <div className=" w-full flex-row justify-between items-center">
+                                <img src={Heart} alt="" />
                     </div>
                 </div>
             </div>

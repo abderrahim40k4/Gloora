@@ -22,7 +22,7 @@ const Home = () => {
     return (
         <div className="mt-5">
             {/* hero section */}
-            <div className="relative  md:p-8 p-2 w-full overflow-hidden  md:rounded-[60px] rounded-[46px] md:h-full h-[598px] flex justify-evenly flex-col md:px-12">
+            <div className="relative  md:p-8 p-2 w-full overflow-hidden  md:rounded-[60px] rounded-[46px] md:h-full h-[598px] flex justify-evenly flex-col md:px-12 z-50">
                 <video
                     className="absolute top-0 md:px-10 px-2 md:rounded-[60px] rounded-[46px] left-0 w-full md:h-full h-[598px] object-cover z-10"
                     src={Hero}

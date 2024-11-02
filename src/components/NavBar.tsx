@@ -99,8 +99,11 @@ const NavBar = () => {
                         <Button className="bg-white text-baseColor font-Averia rounded-full relative text-sm px-6" onClick={() => { navigate("/contact") }}>
                             Contact Us
                         </Button>
-                        <div className="p-4 rounded-full bg-baseColor">
-                            <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div className="w-14 h-14 inline-flex justify-center items-center rounded-full bg-baseColor relative">
+                            <div className="absolute rounded-full w-4 h-4 bg-white -top-0.5 -left-0.5">
+
+                            </div>
+                            <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg" className=" relative">
                                 <path d="M26.5717 2.65838C22.7726 0.328078 19.4569 1.26716 17.4651 2.76302C16.6482 3.37636 16.2399 3.68303 15.9997 3.68303C15.7594 3.68303 15.3511 3.37636 14.5343 2.76302C12.5425 1.26716 9.22672 0.328078 5.42771 2.65838C0.441939 5.71667 -0.686222 15.8061 10.814 24.3182C13.0044 25.9394 14.0996 26.75 15.9997 26.75C17.8997 26.75 18.9949 25.9394 21.1854 24.3182C32.6856 15.8061 31.5574 5.71667 26.5717 2.65838Z" stroke="white" stroke-width="2.5" stroke-linecap="round" />
                             </svg>
 

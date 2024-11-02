@@ -20,8 +20,8 @@ return (
 
         </div>
 
-        <div className="w-full flex md:flex-row flex-col md:gap-12 gap-6 justify-center items-start">
-            <div className="md:w-1/2 w-full p-8 flex flex-col ">
+        <div className="w-full flex md:flex-row flex-col md:gap-12 gap-2 justify-center items-start">
+            <div className="md:w-1/2 w-full md:p-8 p-4 flex flex-col ">
                 <div className='w-full bg-softGray md:rounded-[60px] rounded-3xl p-4 h-full'>
                     <form action="  " className='md:p-12 p-2   grid md:grid-cols-2 grid-cols-1 gap-6'>
                         <div className='col-span-1 w-full'>
@@ -49,8 +49,8 @@ return (
                 </div>
                 <Button size={"default"} className='rounded-full bg-baseColor my-4 py-2 text-white font-Neue font-medium md:text-lg text-xs w-52 h-12'>Send Message</Button>
             </div>
-            <div className='md:w-1/3 w-full p-8'>
-                <div className='w-full border-2 border-softGray p-8 rounded-3xl'>
+            <div className='md:w-1/3 w-full md:p-8 p-4'>
+                <div className='w-full border-2 border-softGray md:p-8 p-4 rounded-3xl'>
                         {
                             glooraContact.map((info, index)=>(
                                 <div key={index} className='my-6'>

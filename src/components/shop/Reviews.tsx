@@ -33,11 +33,11 @@ const Reviews = () => {
                                             <img src={reviw.userName} alt="" />
                                         </div>
                                         <div className="w-auto flex flex-col justify-evenly items-start">
-                                            <p className="font-Neue font-medium text-2xl text-black">{reviw.userName}</p>
+                                            <p className="font-Neue font-medium md:text-2xl text-lg text-black">{reviw.userName}</p>
                                             <p>{reviw.date}</p>
                                         </div>
                                     </div>
-                                    <div className="w-full font-Neue text-black text-xl font-medium">{reviw.comment}</div>
+                                    <div className="w-full font-Neue text-black md:text-xl text-sm font-medium md:pb-4 pb-6">{reviw.comment}</div>
                                 </CarouselItem>
                             ))
                         }

@@ -23,7 +23,8 @@ const ProdactsList = () => {
  
 
   const lastPostIndex = currentPage * postePearPage;
-  const firstPosteIndex = lastPostIndex - postePearPage
+  const firstPosteIndex = lastPostIndex - postePearPage;
+  
   const curentPost = products.slice(firstPosteIndex, lastPostIndex)
 
   return (

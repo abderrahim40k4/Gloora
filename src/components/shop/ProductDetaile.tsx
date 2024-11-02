@@ -104,7 +104,7 @@ const ProductDetaile = () => {
                             <Button className='font-Neue bg-black text-white rounded-full uppercase text-sm font-normal'>DESCRIPTION</Button>
                             <Button className='font-Neue bg-[#E7E7E7] text-white rounded-full uppercase text-sm font-normal'>ADDITIONAL INFOS</Button>
                         </div>
-                        <p className='text-black font-Neue font-medium text-lg'>
+                        <p className='text-black font-Neue font-medium md:text-lg text-sm'>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores omnis eius voluptates quaerat laborum fuga porro itaque suscipit tempore consequatur atque, nihil veniam ex ratione impedit. Unde ratione a minus?
                         </p>
                     </div>

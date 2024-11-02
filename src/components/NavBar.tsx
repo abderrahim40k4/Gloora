@@ -58,9 +58,9 @@ const NavBar = () => {
                     </div>
                     <div className=' flex flex-row justify-evenly gap-6 items-center'>
 
-                        <Button variant={"ghost"} size={"icon"} className="md:block block "><img src={Sack} alt="" /></Button>
+                        <Button variant={"ghost"} size={"icon"} className="md:block block " onClick={() => { navigate("/chekout") }}><img src={Sack} alt="" /></Button>
                         <Button variant={"ghost"} size={"icon"} className="md:hidden block  "><img src={Menu} alt="" onClick={() => { setHandelMenu(!handllMenu) }} /></Button>
-                        <Button variant={"ghost"} size={"icon"} className="lg:block hidden"><img src={Heart} alt="" /></Button>
+                        <Button variant={"ghost"} size={"icon"} className="lg:block hidden"><img src={Heart} alt=""  /></Button>
                         <Button variant={"outline"} className="font-normal lg:text-lg text-base lg:px-10 lg:py-6 px-5 py-3 rounded-full hidden md:flex" onClick={() => { navigate("/contact") }}>Contact</Button>
 
                     </div>

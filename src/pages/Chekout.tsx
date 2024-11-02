@@ -102,8 +102,8 @@ const Chekout = () => {
 
 
                         <h1 className='md:text-2xl text-xl font-Neue font-medium text-black mb-8 mt-12 '>Delivery Information</h1>
-                        <div className='w-full bg-softGray md:rounded-[60px] rounded-3xl md:p-6 p-3 md:h-52 flex md:flex-row flex-col gap-3 justify-evenly items-center'>
-                            <Badge className='py-2 px-3 rounded-full bg-black text-white font-Neue font-medium gap-2 lg:text-lg text-xs relative w-full'>
+                        <div className='w-full bg-softGray md:rounded-[60px] rounded-3xl md:p-6 p-3 md:h-52 flex md:flex-row flex-col gap-2 justify-evenly items-center'>
+                            <Badge className='py-2 px-3 rounded-full bg-black text-white font-Neue font-medium gap-2 lg:text-sm text-xs relative w-full'>
                                 <span className='md:w-6 md:h-6 w-3 h-3 rounded-full bg-[#8FF30C]  inline-flex justify-center items-center'>
                                     <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M2 7.83333L6.375 12L16 2" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -111,7 +111,7 @@ const Chekout = () => {
 
                                 </span>
                                 Online Payment</Badge>
-                            <Badge className='px-3 py-2 rounded-full bg-none border border-[#E3DDDD] relative text-[#E3DDDD] font-Neue font-medium md:text-lg text-xs gap-3 w-full'>
+                            <Badge className='px-2 py-2 rounded-full bg-none border border-[#E3DDDD] relative text-[#E3DDDD] font-Neue font-medium md:text-sm text-xs gap-2 w-full'>
                                 <span className='md:w-6 md:h-6 w-3 h-3 rounded-full bg-[#E4E4E4]  inline-flex justify-center items-center'>
                                     <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg" className=''>
                                         <path d="M2 7.83333L6.375 12L16 2" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -119,7 +119,7 @@ const Chekout = () => {
 
                                 </span>
                                 Cash On Delivery</Badge>
-                            <Badge className='py-2 px-3 rounded-full bg-none border border-[#E3DDDD] relative text-[#E3DDDD] font-Neue font-medium md:text-lg text-xs gap-3 w-full'>
+                            <Badge className='py-2 px-3 rounded-full bg-none border border-[#E3DDDD] relative text-[#E3DDDD] font-Neue font-medium md:text-sm text-xs gap-2 w-full'>
                                 <span className='md:w-6 md:h-6 w-3 h-3 rounded-full bg-[#E4E4E4]   inline-flex justify-center items-center'>
                                     <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg" className=''>
                                         <path d="M2 7.83333L6.375 12L16 2" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />

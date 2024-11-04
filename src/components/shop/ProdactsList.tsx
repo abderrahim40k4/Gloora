@@ -22,9 +22,9 @@ const ProdactsList = () => {
   const [postePearPage, setPostesPearPage] = useState(6)
  
 
-  const lastPostIndex = currentPage * postePearPage;
+  const lastPostIndex = currentPage * postePearPage ;
   const firstPosteIndex = lastPostIndex - postePearPage;
-  
+
   const curentPost = products.slice(firstPosteIndex, lastPostIndex)
 
   return (

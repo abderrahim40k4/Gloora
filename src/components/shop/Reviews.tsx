@@ -27,8 +27,8 @@ const Reviews = () => {
                     <CarouselContent>
                         {
                             reviews.map((reviw, index) => (
-                                <CarouselItem key={index} className="relative flex flex-col gap-6 ">
-                                    <div className="w-ful flex flex-row justify-start gap-4 md:gap-6 items-center">
+                                <CarouselItem key={index} className="relative flex flex-col gap-3 ">
+                                    <div className="w-ful flex flex-row justify-start gap-4 md:gap-4 items-center">
                                         <div className="w-20 h-28 rounded-full bg-white">
                                             <img src={reviw.userName} alt="" />
                                         </div>
@@ -37,7 +37,7 @@ const Reviews = () => {
                                             <p>{reviw.date}</p>
                                         </div>
                                     </div>
-                                    <div className="w-full font-Neue text-black md:text-xl text-sm font-medium md:pb-4 pb-6">{reviw.comment}</div>
+                                    <div className="w-full font-Neue text-black md:text-xl text-sm font-medium md:pb-4 pb-4">{reviw.comment}</div>
                                 </CarouselItem>
                             ))
                         }

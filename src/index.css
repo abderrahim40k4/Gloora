@@ -4,10 +4,14 @@
 @layer base {
   :root {
     --radius: 0.5rem
+    
   }
 }
 @layer components{
   button{
     @apply bg-none font-Averia font-normal rounded-full
   }
+}
+.footer-bg{
+  background-image: url('./assets/images/footer-bg.png')
 }

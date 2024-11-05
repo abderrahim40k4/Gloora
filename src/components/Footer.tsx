@@ -1,6 +1,7 @@
 import { Button } from './ui/button'
 import Arrow from "../assets/icons/arrowNews.svg"
 import Logo from "../assets/images/footerLogo.svg" 
+import Background from "../assets/images/footer-bg.png"
 import { Link } from 'react-router-dom'
 
 interface LinkRoute {
@@ -69,7 +70,7 @@ const links: LinkGroup[] = [
 ]
 
     return (
-        <div className="w-full bg-footer-bg bg-center bg-cover lg:h-[982px] py-12 mt-10 inline-flex justify-center items-center">
+        <div className={`w-full footer-bg   bg-center bg-cover lg:h-[982px] py-12 mt-10 inline-flex justify-center items-center`}>
             <div className='w-5/6 h-4/6 rounded-3xl  bg-baseColor bg-clip-padding backdrop-filter backdrop-blur-[10px] bg-opacity-50 lg:px-12 px-6'>
                 <div className='w-full py-12 mx-auto'>
                     <p className='w-full text-center text-white font-Neue font-medium text-3xl'>Get offers and news</p>
